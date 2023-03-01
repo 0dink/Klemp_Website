@@ -1,0 +1,48 @@
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.Previous{
+    font-size: 20px;
+    background-color:#f1f1f1;
+    color: black;
+}
+
+.Back_to_Main{
+    font-size: 24px;
+}
+
+.arrow{
+    border: solid black;
+    border-width:0 3px 3px 0;
+    display:inline-block;
+    padding: 3px;
+}
+
+.up{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+.down{
+    transform: (43deg);
+    -webkit-transform: rotate(43deg);
+
+}
+
+.column{
+    float: left;
+    width: 45%;
+    padding: 5px;
+}
+.row::after{
+    content:"";
+    clear: both;
+    display: table;
+}
+
+h1{
+    text-align: center;
+}
