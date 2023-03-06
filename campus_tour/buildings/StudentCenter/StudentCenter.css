@@ -32,12 +32,6 @@
     -webkit-transform: rotate(43deg);
 }
 
-.column {
-    float: left;
-    width: 32%;
-    padding: 5px;
-}
-
 .row::after {
     content: "";
     clear: both;
