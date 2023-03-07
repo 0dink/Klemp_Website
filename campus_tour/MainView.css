@@ -1,0 +1,425 @@
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.labels{
+  margin: 3%;
+  position: relative;
+}
+
+.snell{
+  position: absolute;
+  bottom: 250px;
+  right: 490px;
+  font-size: 8px;
+}
+
+.snell .tooltiptext{
+  visibility: hidden;
+  width: 400px;
+  background-color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  position: absolute;
+  z-index: 1;
+}
+
+.snell:hover .tooltiptext{
+  visibility: visible;
+}
+
+.sc{
+  position: absolute;
+  bottom: 165px;
+  right: 550px;
+  font-size: 8px;
+}
+
+.sc .tooltiptext{
+    visibility: hidden;
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .sc:hover .tooltiptext{
+    visibility: visible;
+  }
+
+.erc{
+  position: absolute;
+  bottom: 240px;
+  right: 675px;
+  font-size: 8px;
+}
+
+.erc .tooltiptext{
+    visibility: hidden;
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .erc:hover .tooltiptext{
+    visibility: visible;
+  }
+
+.st{
+  position: absolute;
+  bottom: 265px;
+  right: 710px;
+  font-size: 8px;
+}
+
+.st .tooltiptext{
+    visibility: hidden;
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .st:hover .tooltiptext{
+    visibility: visible;
+  }
+
+.camp{
+  position: absolute;
+  bottom: 225px;
+  right: 850px;
+  font-size: 8px;
+}
+
+.camp .tooltiptext{
+    visibility: hidden;
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .camp:hover .tooltiptext{
+    visibility: visible;
+  }
+
+.rowley{
+  position: absolute;
+  bottom: 200px;
+  right: 770px;
+  font-size: 8px;
+}
+
+.rowley .tooltiptext{
+    visibility: hidden;
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .rowley:hover .tooltiptext{
+    visibility: visible;
+  }
+
+.cheel{
+  position: absolute;
+  bottom: 400px;
+  right: 900px;
+  font-size: 8px;
+}
+
+.cheel .tooltiptext{
+    visibility: hidden;
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .cheel:hover .tooltiptext{
+    visibility: visible;
+  }
+
+.quad{
+  position: absolute;
+  bottom: 540px;
+  right: 650px;
+  font-size: 8px;
+}
+
+.quad .tooltiptext{
+    visibility: hidden;
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .quad:hover .tooltiptext{
+    visibility: visible;
+  }
+
+.pit{
+  position: absolute;
+  bottom: 600px;
+  right: 430px;
+  font-size: 8px;
+}
+
+.pit .tooltiptext{
+    visibility: hidden;
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .pit:hover .tooltiptext{
+    visibility: visible;
+  }
+
+.moore{
+  position: absolute;
+  bottom: 350px;
+  right: 570px;
+  font-size: 8px;
+}
+
+.moore .tooltiptext{
+    visibility: hidden;
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .moore:hover .tooltiptext{
+    visibility: visible;
+  }
+
+.price{
+  position: absolute;
+  bottom: 375px;
+  right: 775px;
+  font-size: 8px;
+}
+
+.price .tooltiptext{
+    visibility: hidden;
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .price:hover .tooltiptext{
+    visibility: visible;
+  }
+
+.graham{
+  position: absolute;
+  bottom: 325px;
+  right: 705px;
+  font-size: 8px;
+}
+
+.graham .tooltiptext{
+    visibility: hidden;
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .graham:hover .tooltiptext{
+    visibility: visible;
+  }
+
+.irc{
+  position: absolute;
+  bottom: 600px;
+  right: 765px;
+  font-size: 8px;
+}
+
+.irc .tooltiptext{
+    visibility: hidden;
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .irc:hover .tooltiptext{
+    visibility: visible;
+  }
+
+.holcroft{
+  position: absolute;
+  bottom: 635px;
+  right: 595px;
+  font-size: 8px;
+}
+
+.holcroft .tooltiptext{
+    visibility: hidden;
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .holcroft:hover .tooltiptext{
+    visibility: visible;
+  }
+
+.riverside{
+  position: absolute;
+  bottom: 300px;
+  right: 250px;
+  font-size: 8px;
+}
+
+.riverside .tooltiptext{
+    visibility: hidden;
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .riverside:hover .tooltiptext{
+    visibility: visible;
+  }
+
+.townhouse{
+  position: absolute;
+  bottom: 50px;
+  right: 770px;
+  font-size: 8px;
+}
+
+.townhouse .tooltiptext{
+    visibility: hidden;
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .townhouse:hover .tooltiptext{
+    visibility: visible;
+  }
+
+.woodstock{
+  position: absolute;
+  bottom: 50px;
+  right: 550px;
+  font-size: 8px;
+}
+
+.woodstock .tooltiptext{
+    visibility: hidden;
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .woodstock:hover .tooltiptext{
+    visibility: visible;
+  }
+
+.walker{
+  position: absolute;
+  bottom: 595px;
+  right: 225px;
+  font-size: 8px;
+}
+
+.walker .tooltiptext{
+    visibility: hidden;
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .walker:hover .tooltiptext{
+    visibility: visible;
+  }

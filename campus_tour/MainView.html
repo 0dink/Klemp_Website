@@ -4,152 +4,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KLEMP Virtual Campus</title>
-    <link href="Stylesheet.css" rel="stylesheet">
+    <link href="MainView.css" rel="stylesheet">
     <style>
       body {
       background-color: darkseagreen;
       font-family: ariel, sans-serif;
       color:black;
     }
-
-    .center{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 75%;
-    }
-
-    .labels{
-      margin: 3%;
-      position: relative;
-    }
-
-    .snell{
-      position: absolute;
-      bottom: 250px;
-      right: 490px;
-      font-size: 8px;
-    }
-
-    .sc{
-      position: absolute;
-      bottom: 165px;
-      right: 550px;
-      font-size: 8px;
-    }
-
-    .erc{
-      position: absolute;
-      bottom: 240px;
-      right: 675px;
-      font-size: 8px;
-    }
-
-    .st{
-      position: absolute;
-      bottom: 265px;
-      right: 710px;
-      font-size: 8px;
-    }
-
-    .camp{
-      position: absolute;
-      bottom: 225px;
-      right: 850px;
-      font-size: 8px;
-    }
-
-    .rowley{
-      position: absolute;
-      bottom: 200px;
-      right: 770px;
-      font-size: 8px;
-    }
-
-    .cheel{
-      position: absolute;
-      bottom: 400px;
-      right: 900px;
-      font-size: 8px;
-    }
-
-    .quad{
-      position: absolute;
-      bottom: 540px;
-      right: 650px;
-      font-size: 8px;
-    }
-
-    .pit{
-      position: absolute;
-      bottom: 600px;
-      right: 430px;
-      font-size: 8px;
-    }
-
-    .moore{
-      position: absolute;
-      bottom: 350px;
-      right: 570px;
-      font-size: 8px;
-    }
-
-    .price{
-      position: absolute;
-      bottom: 375px;
-      right: 775px;
-      font-size: 8px;
-    }
-
-    .graham{
-      position: absolute;
-      bottom: 325px;
-      right: 705px;
-      font-size: 8px;
-    }
-
-    .irc{
-      position: absolute;
-      bottom: 600px;
-      right: 765px;
-      font-size: 8px;
-    }
-
-    .holcroft{
-      position: absolute;
-      bottom: 635px;
-      right: 595px;
-      font-size: 8px;
-    }
-
-    .riverside{
-      position: absolute;
-      bottom: 300px;
-      right: 250px;
-      font-size: 8px;
-    }
-
-    .townhouse{
-      position: absolute;
-      bottom: 50px;
-      right: 770px;
-      font-size: 8px;
-    }
-
-    .woodstock{
-      position: absolute;
-      bottom: 50px;
-      right: 550px;
-      font-size: 8px;
-    }
-
-    .walker{
-      position: absolute;
-      bottom: 595px;
-      right: 225px;
-      font-size: 8px;
-    }
-
     </style>
   </head>
 
@@ -161,24 +22,93 @@
     <div class = "labels">
     <img src = "./map_uploads/mainview_map_no_labels.png" 
       class = "center">
-      <a href="./buildings/Snell/snell.html"><h3 class="snell">Bertrand H. Snell Hall</h3></a>
-      <a href="./buildings/science_center.html"><h3 class="sc"> Science Center</h3></a>
-      <a href = "buildings/ERC/ERC.html"><h3 class = "erc">ERC</h3></a>
-      <a href="./buildings/StudentCenter/StudentCenter.html"><h3 class = "st">Student Center</h3></a>
-      <a href = "buildings/CAMP/CAMP.html"><h3 class = "camp">CAMP</h3></a>
-      <a href = "buildings/rowley/rowley.html"><h3 class = "rowley">Rowley Labs</h3></a>
-      <h3 class = "cheel"> Cheel Arena</h3>
-      <h3 class = "quad">Quad </h3>
-      <h3 class = "pit">Hamlin-Powers House</h3>
-      <h3 class = "moore">Moore House</h3>
-      <h3 class = "price">Price Hall</h3>
-      <h3 class = "graham">Graham Hall</h3>
-      <h3 class = "irc"> IRC</h3>
-      <h3 class = "holcroft">Holcroft House</h3>
-      <h3 class = "riverside">Riverside Apartments</h3>
-      <h3 class = "townhouse">Townhouse Apartments</h3>
-      <h3 class = "woodstock">Woodstock Apartments</h3>
-      <h3 class = "walker">Walker Arena</h3>
+      <div class= "snell"><a href="./buildings/Snell/snell.html">
+        <h3>Bertrand H. Snell Hall</h3></a>
+        <span class = "tooltiptext">Bertrand H. Snell Hall is home to the David D.Reh School of Business, 
+          the Department of Communication, Media, and Design, the Department of Humanities and Social Studies,
+          and our Engineering and Management program.
+          This building also contains collaborative learning environments including a design lab, computer lab, an art studio,
+          and a teaching lab.</span>
+      </div>
+      <div class= "sc"><a href="./buildings/science center/sc.html">
+        <h3> Science Center</h3></a>
+        <span class = "tooltiptext">The Cora and Bayard Clarkson Science Center houses many
+          departments including biology, biomolecular science, chemistry, computer science, data science,
+          mathematics, physics, and psycology. The President's Office is also located in the Science Center
+          in room 321 and can be contacted at president@clarkson.edu or (315)268-6444.
+          Concrete Cafe, a grab and go dining location, can be found on the third floor.</span>
+      </div>
+      <div class = "erc"><a href = "buildings/ERC/ERC.html">
+        <h3>ERC</h3></a>
+        <span class = "tooltiptext">The Andrew S. Schuler Educational Resource Center is a very 
+          popular study spot on campus which also contians many services for students. This student hub contains
+          the Library, Career Center, International Center, Student Success Center, Diversity & Inclusion Offices, 
+          the Student Health and Counseling Center, and Campus Saftey and Security.
+          The ERC also is home to the Dorf Makerspace which allows students to have access to 3D printers, 3D Scanners,
+          handheld CNC capabilities, and a space for student collaboration and innovation.</span>
+      </div>
+      <div class = "st"><a href="./buildings/StudentCenter/StudentCenter.html">
+        <h3>Student Center</h3></a>
+        <span class = "tooltiptext">The Stdent Center is was a student hub that is the center of campus activity.
+          It also includes two dining optons for students to enjoy. The Marketplaec Deli has made to order sandwhiches and wraps as well as 
+          breakfast sandwhiches for grab and go options. The Servery offers many customizable dishes and a rotating menu. 
+          The Student Center also houses the CUSA (student governemnt) Office, a radio station, tv station, the mail room, and CUB (our student union board).</span>
+      </div>
+      <div class = "camp"><a href = "buildings/CAMP/CAMP.html">
+        <h3>CAMP</h3></a>
+        <span class = "tooltiptext"> Remeber when everyone though it was on fire</span>
+      </div>
+      <div class = "rowley"><a href = "buildings/rowley/rowley.html">
+        <h3>Rowley Labs</h3></a><span class ="tooltiptext">This is so tedious</span>
+      </div>
+      <div class = "cheel">
+         <h3>Cheel Arena</h3>
+         <span class = "tooltiptext">YOUR CLARKSON GOLDEN KNIGHTS</span>
+        </div>
+      <div class = "quad">
+        <h3>Quad</h3>
+        <span class = "tooltiptext">YOUR CLARKSON GOLDEN KNIGHTS</span>
+      </div>
+      <div class = "pit">
+        <h3>Hamlin-Powers House</h3>
+        <span class = "tooltiptext">YOUR CLARKSON GOLDEN KNIGHTS</span>
+      </div>
+      <div class = "moore">
+        <h3>Moore House</h3>
+        <span class = "tooltiptext">YOUR CLARKSON GOLDEN KNIGHTS</span>
+      </div>
+      <div class = "price">
+        <h3>Price Hall</h3>
+        <span class = "tooltiptext">YOUR CLARKSON GOLDEN KNIGHTS</span>
+      </div>
+      <div class = "graham">
+        <h3>Graham Hall</h3>
+        <span class = "tooltiptext">YOUR CLARKSON GOLDEN KNIGHTS</span>
+      </div>
+      <div class = "irc">
+        <h3>IRC</h3>
+        <span class = "tooltiptext">YOUR CLARKSON GOLDEN KNIGHTS</span>
+      </div>
+      <div class = "holcroft">
+        <h3>Holocroft House</h3>
+        <span class = "tooltiptext">YOUR CLARKSON GOLDEN KNIGHTS</span>
+      </div>
+      <div class = "riverside">
+        <h3>Riverside Apartments</h3>
+        <span class = "tooltiptext">YOUR CLARKSON GOLDEN KNIGHTS</span>
+      </div>
+      <div class = "townhouse">
+        <h3>Townhouse Apartments</h3>
+        <span class = "tooltiptext">YOUR CLARKSON GOLDEN KNIGHTS</span>
+      </div>
+      <div class = "woodstock">
+        <h3>Woodstock Apartments</h3>
+        <span class = "tooltiptext">YOUR CLARKSON GOLDEN KNIGHTS</span>
+      </div>
+      <div class = "walker">
+        <h3>Walker Arena</h3>
+        <span class = "tooltiptext">YOUR CLARKSON GOLDEN KNIGHTS</span>
+      </div>
     </div>
     
     <nav>
