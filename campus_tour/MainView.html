@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KLEMP Virtual Campus</title>
     <link href="MainView.css" rel="stylesheet">
+    <script src="MainView.js"></script>
     <style>
       body {
       background-color: darkseagreen;
@@ -19,27 +20,27 @@
 
   <body>
     
-    <div class = "labels">
-    <img src = "./map_uploads/mainview_map_no_labels.png" 
-      class = "center">
-      <div class= "snell"><a href="./buildings/Snell/snell.html">
-        <h3>Bertrand H. Snell Hall</h3></a>
+    <div class = "parent">
+
+    
+      <div class= "box snell"><a href="./buildings/Snell/snell.html">
+        <h3 class = "font">Bertrand H. Snell Hall</h3></a>
         <span class = "tooltiptext">Bertrand H. Snell Hall is home to the David D.Reh School of Business, 
           the Department of Communication, Media, and Design, the Department of Humanities and Social Studies,
           and our Engineering and Management program.
           This building also contains collaborative learning environments including a design lab, computer lab, an art studio,
           and a teaching lab.</span>
       </div>
-      <div class= "sc"><a href="./buildings/science center/sc.html">
-        <h3> Science Center</h3></a>
+      <div class= "box sc"><a href="./buildings/science center/sc.html">
+        <h3 class = "font"> Science Center</h3></a>
         <span class = "tooltiptext">The Cora and Bayard Clarkson Science Center houses many
           departments including biology, biomolecular science, chemistry, computer science, data science,
           mathematics, physics, and psycology. The President's Office is also located in the Science Center
           in room 321 and can be contacted at president@clarkson.edu or (315)268-6444.
           Concrete Cafe, a grab and go dining location, can be found on the third floor.</span>
       </div>
-      <div class = "erc"><a href = "buildings/ERC/ERC.html">
-        <h3>ERC</h3></a>
+      <div class = "box erc"><a href = "buildings/ERC/ERC.html">
+        <h3 class = "font">ERC</h3></a>
         <span class = "tooltiptext">The Andrew S. Schuler Educational Resource Center is a very 
           popular study spot on campus which also contians many services for students. This student hub contains
           the Library, Career Center, International Center, Student Success Center, Diversity & Inclusion Offices, 
@@ -47,92 +48,94 @@
           The ERC also is home to the Dorf Makerspace which allows students to have access to 3D printers, 3D Scanners,
           handheld CNC capabilities, and a space for student collaboration and innovation.</span>
       </div>
-      <div class = "st"><a href="./buildings/StudentCenter/StudentCenter.html">
-        <h3>Student Center</h3></a>
+      <div class = "box st"><a href="./buildings/StudentCenter/StudentCenter.html">
+        <h3 class = "font">Student Center</h3></a>
         <span class = "tooltiptext">The Student Center is was a student hub that is the center of campus activity.
           It also includes two dining optons for students to enjoy. The Marketplaec Deli has made to order sandwhiches and wraps as well as 
           breakfast sandwhiches for grab and go options. The Servery offers many customizable dishes and a rotating menu. 
           The Student Center also houses the CUSA (student governemnt) Office, a radio station, tv station, the mail room, and CUB (our student union board).</span>
       </div>
-      <div class = "camp"><a href = "buildings/CAMP/CAMP.html">
-        <h3>CAMP</h3></a>
+      <div class = "box camp"><a href = "buildings/CAMP/CAMP.html">
+        <h3 class = "font">CAMP</h3></a>
         <span class = "tooltiptext"> The Center for Advanced Materials PRocessing is home to Clarkson's 
         Wallace H. Coulter School of Engineering which contains all of our enginnering programs.
         CAMP also is a research center in material proccesing, synthesis, functionalization, and characterization.
         In additon, Clarkson's 12 SPEED teams are also housed here, giving student the opportunity to work in collaborative 
         project teams and compete with them.</span>
       </div>
-      <div class = "rowley"><a href = "buildings/rowley/rowley.html">
-        <h3>Rowley Labs</h3></a><span class ="tooltiptext">Rowly Labs is connected to CAMP and houses many computer and research labs. Many professors offices in the enginnering department can be found in Rowley.</span>
+      <div class = "box rowley"><a href = "buildings/rowley/rowley.html">
+        <h3 class = "font">Rowley Labs</h3></a>
+        <span class ="tooltiptext">Rowly Labs is connected to CAMP and houses many computer and research labs. Many professors offices in the enginnering department can be found in Rowley.</span>
       </div>
-      <div class = "cheel">
-         <h3>Cheel Arena</h3>
+      <div class = "box cheel">
+         <h3 class = "font">Cheel Arena</h3>
          <span class = "tooltiptext">Cheel Campus Center is the current home ice for Clarkson men's and women's Division 1 hockey teams, where students can get free admission to games.
          Cheel also contanains Yianoukos Fitness Center which is a newly rennovated fitness center including a climbing wall.
          There is also a grab and go dining option available at the Disefano's Family Cafe housed in Cheel. </span>
         </div>
-      <div class = "quad">
-        <h3>Quad</h3>
-        <span class = "tooltiptext">The Quad is made up of the residence halls Cubley, Reynolds, Ross, and Brooks which each has four floors.
+      <div class = "box quad">
+        <h3 class = "font">Quad</h3>
+        <span class = "box tooltiptext">The Quad is made up of the residence halls Cubley, Reynolds, Ross, and Brooks which each has four floors.
         This dorming option is mainly for first year students and each room houses two students and about 24-50 students per floor.
         The center of the quad also houses the Ross-Brooks Cafe, also called RoBro, a buffet style dining hall.</span>
       </div>
-      <div class = "pit">
-        <h3>Hamlin-Powers House</h3>
+      <div class = "box pit">
+        <h3 class = "font">Hamlin-Powers House</h3>
         <span class = "tooltiptext">The Hamlin-Powers complex is comprised of two buildings with four floors where each floor houses 50 students. These dorms can house one or two students
         and are mostly populated by uperclassmen.</span>
       </div>
-      <div class = "moore">
-        <h3>Moore House</h3>
+      <div class = "box moore">
+        <h3 class = "font">Moore House</h3>
         <span class = "tooltiptext">Moore House is an upperclassmen dormatory building containing four floors.
         Floors 1-3 are comprised of traditional suites and the fourth floor contains standalone suites.</span>
       </div>
-      <div class = "price">
-        <h3>Price Hall</h3>
+      <div class = "box price">
+        <h3 class = "font">Price Hall</h3>
         <span class = "tooltiptext">Price Hall is made of four wings: Farrisee, Thomas, Newell, and Ormsby. Each wing can house 60 mainly upperclass students in two bedroom suites housing four students.
           Price Hall also contains the Clarkson School and the Honors Office which are housed in the Newell and Ormsby wings.</span>
       </div>
-      <div class = "graham">
-        <h3>Graham Hall</h3>
+      <div class = "box graham">
+        <h3 class = "font">Graham Hall</h3>
         <span class = "tooltiptext">Graham Hall is a dormatory building made of four wings: Wilson, Van Note, Donahue, and Olson. Each wing 
           houses 60 mostly uperclass students in two bedroom suites housing four students.
           In the center of Graham Hall, the Student Administration Service Office (SAS) can be found.</span>
       </div>
-      <div class = "irc">
-        <h3>IRC</h3>
+      <div class = "box irc">
+        <h3 class = "font">IRC</h3>
         <span class = "tooltiptext">The Andrew M. Schuler Recreation Center offers students many 
         recreational activites. This includes the Deneka Family Fitness Center which is a complete workout facility;
         the Indoor Recreation Center which contains a pool, indoor track, and feild house; as well as the Alumni Gymnasium. </span>
       </div>
-      <div class = "holcroft">
-        <h3>Holocroft House</h3>
+      <div class = "box holcroft">
+        <h3 class = "font">Holocroft House</h3>
         <span class = "tooltiptext">Holcroft House is the oldest building on Clarkson's Hill Campus and was originally used as a residence hall.
         Currently, Holcroft House serves as the Office of Undergraduate Admissions building. Undergraduate Admissions can be contacted at (315)268-6480 or admissions@clarkson.edu. </span>
       </div>
-      <div class = "riverside">
-        <h3>Riverside Apartments</h3>
+      <div class = "box riverside">
+        <h3 class = "font">Riverside Apartments</h3>
         <span class = "tooltiptext">These apartments house mostly upperclassmen and overlook the scenic Raquette River.
           The Riverside Appartments also back up to the Munter Trail, which is available for all students to enjoy outdoor activities on.
           The areas around Riverside are also largly used and run by the Clarkson University Outing Club (CUOC), which is the largest
           student organization on campus.</span>
       </div>
-      <div class = "townhouse">
-        <h3>Townhouse Apartments</h3>
+      <div class = "box townhouse">
+        <h3 class = "font">Townhouse Apartments</h3>
         <span class = "tooltiptext">The Townhouse Apartments are made up of 52 aprtments that house four students in two bedrooms.
         Thownhouses are mostly occupied by upperclass students.</span>
       </div>
-      <div class = "woodstock">
-        <h3>Woodstock Apartments</h3>
+      <div class = "box woodstock">
+        <h3 class = "font">Woodstock Apartments</h3>
         <span class = "tooltiptext">Woodstock Village is upperclassmen housing consiting of 10 buildings each with 10 apartments inside.
           These apartments can range from two to seven bedrooms and houses four to six students. 
         </span>
       </div>
-      <div class = "walker">
-        <h3>Walker Arena</h3>
+      <div class = "box walker">
+        <h3 class = "font">Walker Arena</h3>
         <span class = "tooltiptext">Walker Arena was the home arena for Clarkson hockey before Cheel Arena was opened.
         Currently it is used as a multisport facility after a renovationn added a turf field. Walker Arena also neighbors Hantz Feild which
         can be used for many sports and is the home field for many of our division 3 teams.</span>
       </div>
+      <img src = "./map_uploads/mainview_map_no_labels.png" class = "center">
     </div>
     
     <nav>
@@ -140,5 +143,6 @@
       <a  href="./get_directions.html"><h1>Get Directions</h1></a>
       <a  href="./upload_schedule.html"><h1>Upload Schedule</h1></a>
     </nav>
+    <button onclick="importData()">Import Data</button>
   </body>
 </html>
