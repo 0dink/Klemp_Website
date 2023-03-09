@@ -1,20 +1,40 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+img{
+  max-width: 75%;
+  display: block;
+  width: 75%;
+}
+.parent {
+  position: relative;
+}
+.parent .box{
+  position: absolute;
+  width: calc(1.6vw + 10px); 
+  height: calc(1.6vw + 10px);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
 .center{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 75%;
 }
-
-.labels{
-  margin: 3%;
-  position: relative;
-}
-
-.snell{
-  position: absolute;
-  bottom: 250px;
-  right: 490px;
+.font{
   font-size: 8px;
+}
+.parent .box.snell{
+  top: 60%;
+  left: 53%;
 }
 
 .snell .tooltiptext{
@@ -28,17 +48,18 @@
 
   position: absolute;
   z-index: 1;
+  transform: translate(-50%, -100%);
+  left: 50%;
+  top: -5px;
 }
-
 .snell:hover .tooltiptext{
   visibility: visible;
+  font-size: 8px;
 }
 
-.sc{
-  position: absolute;
-  bottom: 165px;
-  right: 550px;
-  font-size: 8px;
+.parent .box.sc{
+  top: 74%;
+  right: 47%;
 }
 
 .sc .tooltiptext{
@@ -58,13 +79,10 @@
     visibility: visible;
   }
 
-.erc{
-  position: absolute;
-  bottom: 240px;
-  right: 675px;
-  font-size: 8px;
-}
-
+  .parent .box.erc{
+    top: 62.5%;
+    left: 39.5%;
+  }
 .erc .tooltiptext{
     visibility: hidden;
     width: 400px;
@@ -81,14 +99,10 @@
   .erc:hover .tooltiptext{
     visibility: visible;
   }
-
-.st{
-  position: absolute;
-  bottom: 265px;
-  right: 710px;
-  font-size: 8px;
+.parent .box.st{
+    top: 58%;
+    left: 36.5%;
 }
-
 .st .tooltiptext{
     visibility: hidden;
     width: 400px;
@@ -106,12 +120,10 @@
     visibility: visible;
   }
 
-.camp{
-  position: absolute;
-  bottom: 225px;
-  right: 850px;
-  font-size: 8px;
-}
+  .parent .box.camp{
+    top: 65%;
+    left: 28%;
+  }
 
 .camp .tooltiptext{
     visibility: hidden;
@@ -130,12 +142,10 @@
     visibility: visible;
   }
 
-.rowley{
-  position: absolute;
-  bottom: 200px;
-  right: 770px;
-  font-size: 8px;
-}
+  .parent .box.rowley{
+    top: 70%;
+    left: 33%;
+  }
 
 .rowley .tooltiptext{
     visibility: hidden;
@@ -154,12 +164,10 @@
     visibility: visible;
   }
 
-.cheel{
-  position: absolute;
-  bottom: 400px;
-  right: 900px;
-  font-size: 8px;
-}
+  .parent .box.cheel{
+    top: 40%;
+    left: 19%;
+  }
 
 .cheel .tooltiptext{
     visibility: hidden;
@@ -178,12 +186,10 @@
     visibility: visible;
   }
 
-.quad{
-  position: absolute;
-  bottom: 540px;
-  right: 650px;
-  font-size: 8px;
-}
+  .parent .box.quad{
+    top: 19%;
+    left: 43%;
+  }
 
 .quad .tooltiptext{
     visibility: hidden;
@@ -202,12 +208,10 @@
     visibility: visible;
   }
 
-.pit{
-  position: absolute;
-  bottom: 600px;
-  right: 430px;
-  font-size: 8px;
-}
+  .parent .box.pit{
+    top: 8%;
+    left: 58%;
+  }
 
 .pit .tooltiptext{
     visibility: hidden;
@@ -226,12 +230,10 @@
     visibility: visible;
   }
 
-.moore{
-  position: absolute;
-  bottom: 350px;
-  right: 570px;
-  font-size: 8px;
-}
+  .parent .box.moore{
+    top: 45%;
+    left: 48%;
+  }
 
 .moore .tooltiptext{
     visibility: hidden;
@@ -250,12 +252,10 @@
     visibility: visible;
   }
 
-.price{
-  position: absolute;
-  bottom: 375px;
-  right: 775px;
-  font-size: 8px;
-}
+  .parent .box.price{
+    top: 42%;
+    left: 31.5%;
+  }
 
 .price .tooltiptext{
     visibility: hidden;
@@ -274,12 +274,10 @@
     visibility: visible;
   }
 
-.graham{
-  position: absolute;
-  bottom: 325px;
-  right: 705px;
-  font-size: 8px;
-}
+  .parent .box.graham{
+    top: 49%;
+    left: 37.5%;
+  }
 
 .graham .tooltiptext{
     visibility: hidden;
@@ -298,13 +296,10 @@
     visibility: visible;
   }
 
-.irc{
-  position: absolute;
-  bottom: 600px;
-  right: 765px;
-  font-size: 8px;
-}
-
+  .parent .box.irc{
+    top: 14%;
+    left: 33%;
+  }
 .irc .tooltiptext{
     visibility: hidden;
     width: 400px;
@@ -322,13 +317,10 @@
     visibility: visible;
   }
 
-.holcroft{
-  position: absolute;
-  bottom: 635px;
-  right: 595px;
-  font-size: 8px;
-}
-
+  .parent .box.holcroft{
+    top: 5%;
+    left: 46%;
+  }
 .holcroft .tooltiptext{
     visibility: hidden;
     width: 400px;
@@ -346,12 +338,10 @@
     visibility: visible;
   }
 
-.riverside{
-  position: absolute;
-  bottom: 300px;
-  right: 250px;
-  font-size: 8px;
-}
+  .parent .box.riverside{
+    top: 55%;
+    left: 73%;
+  }
 
 .riverside .tooltiptext{
     visibility: hidden;
@@ -370,13 +360,10 @@
     visibility: visible;
   }
 
-.townhouse{
-  position: absolute;
-  bottom: 50px;
-  right: 770px;
-  font-size: 8px;
-}
-
+  .parent .box.townhouse{
+    top: 90%;
+    left: 29%;
+  }
 .townhouse .tooltiptext{
     visibility: hidden;
     width: 400px;
@@ -394,12 +381,10 @@
     visibility: visible;
   }
 
-.woodstock{
-  position: absolute;
-  bottom: 50px;
-  right: 550px;
-  font-size: 8px;
-}
+  .parent .box.woodstock{
+    top: 90%;
+    left: 45%;
+  }
 
 .woodstock .tooltiptext{
     visibility: hidden;
@@ -418,12 +403,10 @@
     visibility: visible;
   }
 
-.walker{
-  position: absolute;
-  bottom: 595px;
-  right: 225px;
-  font-size: 8px;
-}
+  .parent .box.walker{
+    top: 10%;
+    left: 77%;
+  }
 
 .walker .tooltiptext{
     visibility: hidden;
@@ -441,3 +424,14 @@
   .walker:hover .tooltiptext{
     visibility: visible;
   }
+  
+  button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
