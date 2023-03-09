@@ -4,152 +4,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KLEMP Virtual Campus</title>
-    <link href="Stylesheet.css" rel="stylesheet">
+    <link href="MainView.css" rel="stylesheet">
     <style>
       body {
       background-color: darkseagreen;
       font-family: ariel, sans-serif;
       color:black;
     }
-
-    .center{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 75%;
-    }
-
-    .labels{
-      margin: 3%;
-      position: relative;
-    }
-
-    .snell{
-      position: absolute;
-      bottom: 250px;
-      right: 490px;
-      font-size: 8px;
-    }
-
-    .sc{
-      position: absolute;
-      bottom: 165px;
-      right: 550px;
-      font-size: 8px;
-    }
-
-    .erc{
-      position: absolute;
-      bottom: 240px;
-      right: 675px;
-      font-size: 8px;
-    }
-
-    .st{
-      position: absolute;
-      bottom: 265px;
-      right: 710px;
-      font-size: 8px;
-    }
-
-    .camp{
-      position: absolute;
-      bottom: 225px;
-      right: 850px;
-      font-size: 8px;
-    }
-
-    .rowley{
-      position: absolute;
-      bottom: 200px;
-      right: 770px;
-      font-size: 8px;
-    }
-
-    .cheel{
-      position: absolute;
-      bottom: 400px;
-      right: 900px;
-      font-size: 8px;
-    }
-
-    .quad{
-      position: absolute;
-      bottom: 540px;
-      right: 650px;
-      font-size: 8px;
-    }
-
-    .pit{
-      position: absolute;
-      bottom: 600px;
-      right: 430px;
-      font-size: 8px;
-    }
-
-    .moore{
-      position: absolute;
-      bottom: 350px;
-      right: 570px;
-      font-size: 8px;
-    }
-
-    .price{
-      position: absolute;
-      bottom: 375px;
-      right: 775px;
-      font-size: 8px;
-    }
-
-    .graham{
-      position: absolute;
-      bottom: 325px;
-      right: 705px;
-      font-size: 8px;
-    }
-
-    .irc{
-      position: absolute;
-      bottom: 600px;
-      right: 765px;
-      font-size: 8px;
-    }
-
-    .holcroft{
-      position: absolute;
-      bottom: 635px;
-      right: 595px;
-      font-size: 8px;
-    }
-
-    .riverside{
-      position: absolute;
-      bottom: 300px;
-      right: 250px;
-      font-size: 8px;
-    }
-
-    .townhouse{
-      position: absolute;
-      bottom: 50px;
-      right: 770px;
-      font-size: 8px;
-    }
-
-    .woodstock{
-      position: absolute;
-      bottom: 50px;
-      right: 550px;
-      font-size: 8px;
-    }
-
-    .walker{
-      position: absolute;
-      bottom: 595px;
-      right: 225px;
-      font-size: 8px;
-    }
-
     </style>
   </head>
 
@@ -161,24 +22,117 @@
     <div class = "labels">
     <img src = "./map_uploads/mainview_map_no_labels.png" 
       class = "center">
-      <a href="./buildings/Snell/snell.html"><h3 class="snell">Bertrand H. Snell Hall</h3></a>
-      <a href="./buildings/science center/sc.html"><h3 class="sc"> Science Center</h3></a>
-      <a href = "buildings/ERC/ERC.html"><h3 class = "erc">ERC</h3></a>
-      <a href="./buildings/StudentCenter/StudentCenter.html"><h3 class = "st">Student Center</h3></a>
-      <a href = "buildings/CAMP/CAMP.html"><h3 class = "camp">CAMP</h3></a>
-      <a href = "buildings/rowley/rowley.html"><h3 class = "rowley">Rowley Labs</h3></a>
-      <h3 class = "cheel"> Cheel Arena</h3>
-      <h3 class = "quad">Quad </h3>
-      <h3 class = "pit">Hamlin-Powers House</h3>
-      <h3 class = "moore">Moore House</h3>
-      <h3 class = "price">Price Hall</h3>
-      <h3 class = "graham">Graham Hall</h3>
-      <h3 class = "irc"> IRC</h3>
-      <h3 class = "holcroft">Holcroft House</h3>
-      <h3 class = "riverside">Riverside Apartments</h3>
-      <h3 class = "townhouse">Townhouse Apartments</h3>
-      <h3 class = "woodstock">Woodstock Apartments</h3>
-      <h3 class = "walker">Walker Arena</h3>
+      <div class= "snell"><a href="./buildings/Snell/snell.html">
+        <h3>Bertrand H. Snell Hall</h3></a>
+        <span class = "tooltiptext">Bertrand H. Snell Hall is home to the David D.Reh School of Business, 
+          the Department of Communication, Media, and Design, the Department of Humanities and Social Studies,
+          and our Engineering and Management program.
+          This building also contains collaborative learning environments including a design lab, computer lab, an art studio,
+          and a teaching lab.</span>
+      </div>
+      <div class= "sc"><a href="./buildings/science center/sc.html">
+        <h3> Science Center</h3></a>
+        <span class = "tooltiptext">The Cora and Bayard Clarkson Science Center houses many
+          departments including biology, biomolecular science, chemistry, computer science, data science,
+          mathematics, physics, and psycology. The President's Office is also located in the Science Center
+          in room 321 and can be contacted at president@clarkson.edu or (315)268-6444.
+          Concrete Cafe, a grab and go dining location, can be found on the third floor.</span>
+      </div>
+      <div class = "erc"><a href = "buildings/ERC/ERC.html">
+        <h3>ERC</h3></a>
+        <span class = "tooltiptext">The Andrew S. Schuler Educational Resource Center is a very 
+          popular study spot on campus which also contians many services for students. This student hub contains
+          the Library, Career Center, International Center, Student Success Center, Diversity & Inclusion Offices, 
+          the Student Health and Counseling Center, and Campus Saftey and Security.
+          The ERC also is home to the Dorf Makerspace which allows students to have access to 3D printers, 3D Scanners,
+          handheld CNC capabilities, and a space for student collaboration and innovation.</span>
+      </div>
+      <div class = "st"><a href="./buildings/StudentCenter/StudentCenter.html">
+        <h3>Student Center</h3></a>
+        <span class = "tooltiptext">The Student Center is was a student hub that is the center of campus activity.
+          It also includes two dining optons for students to enjoy. The Marketplaec Deli has made to order sandwhiches and wraps as well as 
+          breakfast sandwhiches for grab and go options. The Servery offers many customizable dishes and a rotating menu. 
+          The Student Center also houses the CUSA (student governemnt) Office, a radio station, tv station, the mail room, and CUB (our student union board).</span>
+      </div>
+      <div class = "camp"><a href = "buildings/CAMP/CAMP.html">
+        <h3>CAMP</h3></a>
+        <span class = "tooltiptext"> The Center for Advanced Materials PRocessing is home to Clarkson's 
+        Wallace H. Coulter School of Engineering which contains all of our enginnering programs.
+        CAMP also is a research center in material proccesing, synthesis, functionalization, and characterization.
+        In additon, Clarkson's 12 SPEED teams are also housed here, giving student the opportunity to work in collaborative 
+        project teams and compete with them.</span>
+      </div>
+      <div class = "rowley"><a href = "buildings/rowley/rowley.html">
+        <h3>Rowley Labs</h3></a><span class ="tooltiptext">Rowly Labs is connected to CAMP and houses many computer and research labs. Many professors offices in the enginnering department can be found in Rowley.</span>
+      </div>
+      <div class = "cheel">
+         <h3>Cheel Arena</h3>
+         <span class = "tooltiptext">Cheel Campus Center is the current home ice for Clarkson men's and women's Division 1 hockey teams, where students can get free admission to games.
+         Cheel also contanains Yianoukos Fitness Center which is a newly rennovated fitness center including a climbing wall.
+         There is also a grab and go dining option available at the Disefano's Family Cafe housed in Cheel. </span>
+        </div>
+      <div class = "quad">
+        <h3>Quad</h3>
+        <span class = "tooltiptext">The Quad is made up of the residence halls Cubley, Reynolds, Ross, and Brooks which each has four floors.
+        This dorming option is mainly for first year students and each room houses two students and about 24-50 students per floor.
+        The center of the quad also houses the Ross-Brooks Cafe, also called RoBro, a buffet style dining hall.</span>
+      </div>
+      <div class = "pit">
+        <h3>Hamlin-Powers House</h3>
+        <span class = "tooltiptext">The Hamlin-Powers complex is comprised of two buildings with four floors where each floor houses 50 students. These dorms can house one or two students
+        and are mostly populated by uperclassmen.</span>
+      </div>
+      <div class = "moore">
+        <h3>Moore House</h3>
+        <span class = "tooltiptext">Moore House is an upperclassmen dormatory building containing four floors.
+        Floors 1-3 are comprised of traditional suites and the fourth floor contains standalone suites.</span>
+      </div>
+      <div class = "price">
+        <h3>Price Hall</h3>
+        <span class = "tooltiptext">Price Hall is made of four wings: Farrisee, Thomas, Newell, and Ormsby. Each wing can house 60 mainly upperclass students in two bedroom suites housing four students.
+          Price Hall also contains the Clarkson School and the Honors Office which are housed in the Newell and Ormsby wings.</span>
+      </div>
+      <div class = "graham">
+        <h3>Graham Hall</h3>
+        <span class = "tooltiptext">Graham Hall is a dormatory building made of four wings: Wilson, Van Note, Donahue, and Olson. Each wing 
+          houses 60 mostly uperclass students in two bedroom suites housing four students.
+          In the center of Graham Hall, the Student Administration Service Office (SAS) can be found.</span>
+      </div>
+      <div class = "irc">
+        <h3>IRC</h3>
+        <span class = "tooltiptext">The Andrew M. Schuler Recreation Center offers students many 
+        recreational activites. This includes the Deneka Family Fitness Center which is a complete workout facility;
+        the Indoor Recreation Center which contains a pool, indoor track, and feild house; as well as the Alumni Gymnasium. </span>
+      </div>
+      <div class = "holcroft">
+        <h3>Holocroft House</h3>
+        <span class = "tooltiptext">Holcroft House is the oldest building on Clarkson's Hill Campus and was originally used as a residence hall.
+        Currently, Holcroft House serves as the Office of Undergraduate Admissions building. Undergraduate Admissions can be contacted at (315)268-6480 or admissions@clarkson.edu. </span>
+      </div>
+      <div class = "riverside">
+        <h3>Riverside Apartments</h3>
+        <span class = "tooltiptext">These apartments house mostly upperclassmen and overlook the scenic Raquette River.
+          The Riverside Appartments also back up to the Munter Trail, which is available for all students to enjoy outdoor activities on.
+          The areas around Riverside are also largly used and run by the Clarkson University Outing Club (CUOC), which is the largest
+          student organization on campus.</span>
+      </div>
+      <div class = "townhouse">
+        <h3>Townhouse Apartments</h3>
+        <span class = "tooltiptext">The Townhouse Apartments are made up of 52 aprtments that house four students in two bedrooms.
+        Thownhouses are mostly occupied by upperclass students.</span>
+      </div>
+      <div class = "woodstock">
+        <h3>Woodstock Apartments</h3>
+        <span class = "tooltiptext">Woodstock Village is upperclassmen housing consiting of 10 buildings each with 10 apartments inside.
+          These apartments can range from two to seven bedrooms and houses four to six students. 
+        </span>
+      </div>
+      <div class = "walker">
+        <h3>Walker Arena</h3>
+        <span class = "tooltiptext">Walker Arena was the home arena for Clarkson hockey before Cheel Arena was opened.
+        Currently it is used as a multisport facility after a renovationn added a turf field. Walker Arena also neighbors Hantz Feild which
+        can be used for many sports and is the home field for many of our division 3 teams.</span>
+      </div>
     </div>
     
     <nav>
