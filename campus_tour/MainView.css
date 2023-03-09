@@ -53,8 +53,10 @@ img{
   top: -5px;
 }
 .snell:hover .tooltiptext{
+  transform: translate(-50%, -100%);
+  left: 50%;
+  top: -5px;
   visibility: visible;
-  font-size: 8px;
 }
 
 .parent .box.sc{
@@ -76,6 +78,9 @@ img{
   }
   
   .sc:hover .tooltiptext{
+    transform: translate(-50%, -100%);
+    left: 50%;
+    top: -5px;
     visibility: visible;
   }
 
@@ -97,6 +102,9 @@ img{
   }
   
   .erc:hover .tooltiptext{
+    transform: translate(-50%, -100%);
+    left: 50%;
+    top: -5px;
     visibility: visible;
   }
 .parent .box.st{
@@ -115,8 +123,13 @@ img{
     position: absolute;
     z-index: 1;
   }
+
+
   
   .st:hover .tooltiptext{
+    transform: translate(-50%, -100%);
+    left: 50%;
+    top: -5px;
     visibility: visible;
   }
 
@@ -139,6 +152,9 @@ img{
   }
   
   .camp:hover .tooltiptext{
+    transform: translate(-50%, -100%);
+    left: 50%;
+    top: -5px;
     visibility: visible;
   }
 
@@ -161,6 +177,9 @@ img{
   }
   
   .rowley:hover .tooltiptext{
+    transform: translate(-50%, -100%);
+    left: 50%;
+    top: -5px;
     visibility: visible;
   }
 
@@ -183,6 +202,9 @@ img{
   }
   
   .cheel:hover .tooltiptext{
+    transform: translate(-50%, -100%);
+    left: 50%;
+    top: -5px;
     visibility: visible;
   }
 
@@ -205,6 +227,9 @@ img{
   }
   
   .quad:hover .tooltiptext{
+    transform: translate(-50%, -100%);
+    left: 50%;
+    top: -5px;
     visibility: visible;
   }
 
@@ -227,6 +252,9 @@ img{
   }
   
   .pit:hover .tooltiptext{
+    transform: translate(-50%, -100%);
+    left: 50%;
+    top: -5px;
     visibility: visible;
   }
 
@@ -249,6 +277,9 @@ img{
   }
   
   .moore:hover .tooltiptext{
+    transform: translate(-50%, -100%);
+    left: 50%;
+    top: -5px;
     visibility: visible;
   }
 
@@ -271,6 +302,9 @@ img{
   }
   
   .price:hover .tooltiptext{
+    transform: translate(-50%, -100%);
+    left: 50%;
+    top: -5px;
     visibility: visible;
   }
 
@@ -293,6 +327,9 @@ img{
   }
   
   .graham:hover .tooltiptext{
+    transform: translate(-50%, -100%);
+    left: 50%;
+    top: -5px;
     visibility: visible;
   }
 
@@ -314,6 +351,9 @@ img{
   }
   
   .irc:hover .tooltiptext{
+    transform: translate(-50%, -100%);
+    left: 50%;
+    top: -5px;
     visibility: visible;
   }
 
@@ -335,6 +375,9 @@ img{
   }
   
   .holcroft:hover .tooltiptext{
+    transform: translate(-50%, -100%);
+    left: 50%;
+    top: -5px;
     visibility: visible;
   }
 
@@ -357,6 +400,9 @@ img{
   }
   
   .riverside:hover .tooltiptext{
+    transform: translate(-50%, -100%);
+    left: 50%;
+    top: -5px;
     visibility: visible;
   }
 
@@ -378,6 +424,9 @@ img{
   }
   
   .townhouse:hover .tooltiptext{
+    transform: translate(-50%, -100%);
+    left: 50%;
+    top: -5px;
     visibility: visible;
   }
 
@@ -400,6 +449,9 @@ img{
   }
   
   .woodstock:hover .tooltiptext{
+    transform: translate(-50%, -100%);
+    left: 50%;
+    top: -5px;
     visibility: visible;
   }
 
@@ -422,6 +474,9 @@ img{
   }
   
   .walker:hover .tooltiptext{
+    transform: translate(-50%, -100%);
+    left: 50%;
+    top: -5px;
     visibility: visible;
   }
   
