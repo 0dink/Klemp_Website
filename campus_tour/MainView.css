@@ -124,8 +124,6 @@ img{
     z-index: 1;
   }
 
-
-  
   .st:hover .tooltiptext{
     transform: translate(-50%, -100%);
     left: 50%;
