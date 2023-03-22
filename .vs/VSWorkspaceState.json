@@ -4,9 +4,8 @@
     "\\campus_tour",
     "\\campus_tour\\buildings",
     "\\campus_tour\\buildings\\ERC",
-    "\\campus_tour\\buildings\\StudentCenter",
-    "\\campus_tour\\buildings\\StudentCenter\\StudentCenter_maps"
+    "\\campus_tour\\buildings\\StudentCenter"
   ],
-  "SelectedNode": "\\campus_tour\\MainView.css",
+  "SelectedNode": "\\campus_tour\\buildings\\ERC\\ERC_maps",
   "PreviewInSolutionExplorer": false
 }
