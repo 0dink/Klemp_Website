@@ -212,16 +212,16 @@ img{
   }
 
 .quad .tooltiptext{
-    visibility: hidden;
-    width: 400px;
-    background-color: white;
-    text-align: center;
-    border-radius: 6px;
-    border-style: solid;
-    padding: 5px 0;
-  
-    position: absolute;
-    z-index: 1;
+  visibility: hidden;
+  width: 400px;
+  background-color: white;
+  text-align: center;
+  border-radius: 6px;
+  border-style: solid;
+  padding: 5px 0;
+
+  position: absolute;
+  z-index: 1;
   }
   
   .quad:hover .tooltiptext{
@@ -250,9 +250,8 @@ img{
   }
   
   .pit:hover .tooltiptext{
-    transform: translate(-50%, -100%);
     left: 50%;
-    top: -5px;
+    top: 100%;
     visibility: visible;
   }
 
@@ -349,9 +348,8 @@ img{
   }
   
   .irc:hover .tooltiptext{
-    transform: translate(-50%, -100%);
     left: 50%;
-    top: -5px;
+    top: 100%;
     visibility: visible;
   }
 
@@ -373,9 +371,8 @@ img{
   }
   
   .holcroft:hover .tooltiptext{
-    transform: translate(-50%, -100%);
     left: 50%;
-    top: -5px;
+    top: 100%;
     visibility: visible;
   }
 
@@ -472,9 +469,8 @@ img{
   }
   
   .walker:hover .tooltiptext{
-    transform: translate(-50%, -100%);
-    left: 50%;
-    top: -5px;
+    right: 50%;
+    top: 100%;
     visibility: visible;
   }
   
