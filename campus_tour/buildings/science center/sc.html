@@ -5,39 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Science Center</title>
     <link href="sc.css" rel="stylesheet">
-    <style>
-      body {
-      background-color: darkseagreen;
-      font-family: ariel, sans-serif;
-      color:DarkGreen;
-    }
-
-    *{
-        box-sizing: border-box;
-    }
-
-    .column{
-        float: left;
-        width: 50%
-    }
-
-    .row::after{
-        content:"";
-        clear: both;
-        display: table;
-    }
-
-    .Previous{
-        font-size: 20px;
-        background-color:#f1f1f1;
-        color: black;
-    }
-
-    </style>
   </head>
-
-
-  </style>
 
   <body>
 
@@ -47,21 +15,28 @@
 
     <div class = "row">
         <div class = "column">
-            <a href="sc_one.html"><img src="./sc_maps/science_center_first_floor_temp.png" alt="First Floor"
-                style = "width:100%"
-            ></a>
+            <h1>Science Center First Floor</h1>
+            <a href="sc_one.html">
+                <img src="./sc_maps/science_center_first_floor_temp.png" alt="First Floor"
+                class="filter-image" style = "width: 66%">
+            </a>
             
         </div>
         <div class = "column">
-           <a href="sc_two.html"> <img src = "./sc_maps/science_center_second_floor_temp.png" alt="Second Floor"
-                style = "width: 100%"
-            ></a>
+            <h1>Science Center Second Floor</h1>
+           <a href="sc_two.html"> 
+            <img src = "./sc_maps/science_center_second_floor_temp.png" alt="Second Floor"
+                class="filter-image" style = "width: 66%">
+            </a>
         </div>
     </div>
 
     <div class = "row">
-        <a href="sc_three.html"> <img src = "./sc_maps/science_center_third_floor_temp.png" alt="Third Floor"
-            class="center" style="width: 50%">
+        <div class="center"></div>
+        <h1>Science Center Third Floor</h1>
+        <a href="sc_three.html"> 
+            <img src = "./sc_maps/science_center_third_floor_temp.png" alt="Third Floor"
+            class="filter-image" style="width: 33%">
         </a>
     </div>
     </div>

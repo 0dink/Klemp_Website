@@ -3,9 +3,8 @@
     "",
     "\\campus_tour",
     "\\campus_tour\\buildings",
-    "\\campus_tour\\buildings\\ERC",
     "\\campus_tour\\buildings\\StudentCenter"
   ],
-  "SelectedNode": "\\campus_tour\\buildings\\ERC\\ERC_maps",
+  "SelectedNode": "\\campus_tour\\buildings\\StudentCenter\\test.js",
   "PreviewInSolutionExplorer": false
 }
