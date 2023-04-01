@@ -1,48 +1,50 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rowley Labs Floor 1</title>
-    <link href="rowley.css" rel="stylesheet">
-    <script src = "rowley.js"></script>
-  </head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rowley Labs First Floor</title>
+        <link rel="stylesheet" href="rowley.css">
+        <script src="rowley.js"></script>
+        <style>
+          body {
+          background-color: darkseagreen;
+          font-family: ariel, sans-serif;
+          color:DarkGreen;
+        }
+        </style>
+    </head>
+    
+    <body>
+        <div class="row">
+            <div class="column_1">
+                <a href="rowley.html"> <button class="Previous"> &laquo; Back</button> </a>
+                <a href="../../MainView.html"> <button class="Back_to_Main"> Main View</button></a>
+                <p>Floor Navigation</p>
+                <div class="column_3">
+                    <a href="rowley_two.html"><i class="arrow up"></i></a>
+                </div>
+                <input type="text" id="searchTXT" placeholder="Search...">
+                <button onclick="searchbar()">Search</button>
+            </div>
 
-
-  </style>
-
-  <body>
-    <div class="row">
-      <div class="column_1">
-          <a href="rowley.html"> <button class="Previous"> &laquo; Back</button> </a>
-          <a href="../../MainView.html"> <button class="Back_to_Main"> Main View</button></a>
-          <p>Floor Navigation</p>
-          <div class="column_3">
-              <a href="rowley_two.html"><i class="arrow up"></i></a>
-          </div>
-          <input type="text" id="searchTXT" placeholder="Search...">
-          <button onclick="searchbar()">Search</button>
-      </div>
-
-      <div class="column_2">
-          <h1>Rowley Labs First Floor</h1>
-          <div class = "parent">
-            <div class = "box">
-            <img scr="./rowley_maps/Rowley_First_Floor.jpg"
-             class = "center">
-             </div>
-          </div>
-      </div>
-      <div class="searchPopup">
-          <div class="formPopup" id="popupSearch">
-              <form action="/actionpage.php" class="formContainer">
-                  <h2>Search</h2>
-                  <button type="submit" class="btn">Go To</button>
-                  <button type="submit" class="btn">Directions To </button>
-                  <button type="button" onclick="closeForm()">Close</button>
-              </form>
-          </div>
-      </div>
-  </div>
-  </body>
+            <div class="column_2">
+                <h1>Rowley Labs First Floor</h1>
+                <div class="parent">
+                    <img src="./rowley_maps/Rowley_First_Floor.jpg"
+                         class="center">
+                </div>
+            </div>
+            <div class="searchPopup">
+                 <div class="formPopup" id="popupSearch">
+                        <form action="/actionpage.php" class="formContainer">
+                            <h2>Search</h2>
+                            <button type="submit" class="btn">Go To</button>
+                            <button type="submit" class="btn">Directions To </button>
+                            <button type="button" onclick="closeForm()">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </body>
 </html>
