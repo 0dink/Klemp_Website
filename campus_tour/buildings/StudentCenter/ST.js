@@ -6,25 +6,71 @@ function searchbar() {
 }
 
 function goTo(){
-    var searchValue = roomName; 
-    var prefix = searchValue.slice(0, 2); // extract the first two characters of the search value
-    var realRoomName = searchValue.substring(2);;
+    var prefix = roomName.slice(0, 2); // extract the first two characters of the search value
+    var floor = roomName.slice(2, 3);
+    var realRoomName = roomName.substring(2);
 
     var filename;
     if (prefix === "CA") {
-        filename = "../../CSV_files/CAMP.csv"; 
+        if (floor === 1) {
+            filename = "../../CSV_files/CAMP1.csv";
+        } else if (floor === 2) {
+            filename = "../../CSV_files/CAMP2.csv";
+        } else if (floor === 3) {
+            filename = "../../CSV_files/CAMP3.csv";
+        } else{
+            return null;
+        }
     } else if (prefix === "SC") {
-        filename = "../../CSV_files/StudentCenter.csv";
-    } else if(prefix === "SN"){
-        filename = "../../CSV_files/Snell.csv";
-    } else if(prefix === "ST"){
-       filename === "../../CSV_files/StudentCenter.csv"
-    } else if(prefix === "ER"){
-        filename ==="../../CSV_files/ERC.csv";
-    } else if(prefix === "RO"){
-        filename === "../../CSV_files/Rowley.csv"
-    } else{
-        return null; 
+        if (floor === 1) {
+            filename = "../../CSV_files/ScienceCenter1.csv";
+        } else if (floor === 2) {
+            filename = "../../CSV_files/ScienceCenter2.csv";
+        } else if (floor === 3) {
+            filename = "../../CSV_files/ScienceCenter3.csv";
+        } else {
+            return null;
+        }
+    } else if (prefix === "SN") {
+        if (floor === 'B') {
+            filename = "../../CSV_files/SnellB.csv";
+        } else if (floor === 1) {
+            filename = "../../CSV_files/Snell1.csv";
+        } else if (floor === 2) {
+            filename = "../../CSV_files/Snell2.csv";
+        } else if (floor === 3) {
+            filename = "../../CSV_files/Snell2.csv";
+        } else {
+            return null;
+        }
+    } else if (prefix === "ST") {
+        if (floor === 'B') {
+            filename = "../../CSV_files/StudentCenterB.csv";
+        } else if (floor === 1) {
+            filename = "../../CSV_files/StudentCenter2.csv";
+        } else if (floor === 2) {
+            filename = "../../CSV_files/StudentCenter3.csv";
+        } else {
+            return null;
+        }
+    } else if (prefix === "ER") {
+        if (floor === 1) {
+            filename = "../../CSV_files/ERC1.csv";
+        } else if (floor === 2) {
+            filename = "../../CSV_files/ERC2.csv";
+        } else {
+            return null;
+        }
+    } else if (prefix === "RO") {
+        if (floor === 1) {
+            filename = "../../CSV_files/Rowley1.csv";
+        } else if (floor === 2) {
+            filename = "../../CSV_files/Rowley2.csv";
+        } else {
+            return null;
+        }
+    } else {
+        return null;
     }
 
     var xhr = new XMLHttpRequest();
