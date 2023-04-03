@@ -11,7 +11,16 @@
   </style>
 
   <body>
-    
+
+  <div>
+    <nav>
+      <input type="text" id="searchTXT" placeholder="Search..">
+        <button onclick="searchbar()">Search</button>
+        
+      <button onclick="openFile(dispFile)">Upload Schedule</button>
+    </nav>
+  </div>
+   
     <div class = "parent">
 
     
@@ -130,15 +139,21 @@
       </div>
       <img src = "./map_uploads/mainview_map_no_labels.png" class = "center">
     </div>
-    
-    <nav>
-      <a  href="./search.html"><h1>Search</h1></a>
-      <a  href="./get_directions.html"><h1>Get Directions</h1></a>
-    </nav>
-    <button onclick="openFile(dispFile)">Upload Schedule</button>
-    <pre id="contents"></pre>
 
+    <pre id="contents"></pre>
     <p id = "demo"></p>
+
+
+    <div class="searchPopup">
+      <div class="formPopup" id="popupSearch">
+          <form class="formContainer">
+              <h2>Search</h2>
+              <button type="button" class="btn" onclick="goTo()" id="goToBtn">Go To</button>
+              <button type="submit" class="btn" onclick="directionsTo()" id="directionsToBtn">Directions To </button>
+              <button type="button" onclick="closeForm()">Close</button>
+          </form>
+      </div>
+  </div>
 
   </body>
 </html>
