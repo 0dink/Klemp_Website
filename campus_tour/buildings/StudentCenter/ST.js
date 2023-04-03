@@ -12,17 +12,17 @@ function goTo(){
 
     var filename;
     if (prefix === "CA") {
-        filename = "/CAMP.csv"; 
+        filename = "../../CSV_files/CAMP.csv"; 
     } else if (prefix === "SC") {
-        filename = "../../CSV/StudentCenter.csv";
+        filename = "../../CSV_files/StudentCenter.csv";
     } else if(prefix === "SN"){
-        filename = "../../CSV/Snell.csv";
+        filename = "../../CSV_files/Snell.csv";
     } else if(prefix === "ST"){
-       filename === "../../CSV/StudentCenter.csv"
+       filename === "../../CSV_files/StudentCenter.csv"
     } else if(prefix === "ER"){
-        filename ==="../../CSV/ERC.csv";
+        filename ==="../../CSV_files/ERC.csv";
     } else if(prefix === "RO"){
-        filename === "../../CSV/Rowley.csv"
+        filename === "../../CSV_files/Rowley.csv"
     } else{
         return null; 
     }
