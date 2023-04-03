@@ -50,11 +50,11 @@ body {
     padding: 10px;
 }
 
-.center {
+.center{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 100%; 
 }
 
 .center_1 /*This is for floor view*/ {

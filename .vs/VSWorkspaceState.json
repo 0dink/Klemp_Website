@@ -3,8 +3,9 @@
     "",
     "\\campus_tour",
     "\\campus_tour\\buildings",
+    "\\campus_tour\\buildings\\CAMP",
     "\\campus_tour\\buildings\\StudentCenter"
   ],
-  "SelectedNode": "\\campus_tour\\buildings\\StudentCenter\\test.js",
+  "SelectedNode": "\\campus_tour\\buildings\\StudentCenter\\mysql-master",
   "PreviewInSolutionExplorer": false
 }
