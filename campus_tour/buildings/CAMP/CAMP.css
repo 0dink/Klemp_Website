@@ -5,7 +5,7 @@ h1{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 100%;
 }
 .Previous{
     font-size: 20px;
@@ -44,17 +44,14 @@ h1{
 .column_1{
     float: left;
     width: 10%;
-    padding: 5px;
 }
 .column_2{
     float: left;
     width: 85%;
-    padding: 5px;
 }
 .column_3{
     float: left;
     width: 15%;
-    padding: 10px;
 }
 .searchPopup {
     position: relative;
@@ -80,7 +77,7 @@ h1{
 .parent {
     position: relative;
   }
-  .parent .box{
+.parent .box{
     position: absolute;
     width: calc(1.6vw + 10px); 
     height: calc(1.6vw + 10px);
@@ -95,8 +92,9 @@ h1{
             align-items: center;
   }
   .parent .box.snell{
-    top: 5%;
-    left: 43.8%;
+    top: 8%;
+    left: 33%;
+    z-index: 10;
   }
   .parent .box.snell2{
     top: 7%;

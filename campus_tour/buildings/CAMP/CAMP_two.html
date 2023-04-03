@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CAMP Floor 2</title>
     <link href="CAMP.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0"></script>
     <script src="CAMP.js"></script>
     <style>
         body {
@@ -15,7 +16,7 @@
     </style>
 </head>
 
-<body>
+<body onload = "openCSV2(document.getElementById('parent'))">
   <div class = "row">
           <div class ="column_1">
               <a href = "CAMP.html"> <button class = "Previous"> &laquo; Back</button> </a>
@@ -32,15 +33,22 @@
           </div>
       
           <div class = "column_2">
-              <h1>CAMP Third Floor</h1>
-              <img src="./CAMP_maps/CAMP_second_floor_plan.jpg" class ="center">
-          </div>
+            <h1>CAMP Second Floor</h1>
+            <div id="parent" class = "parent">
+                <div class= "box snell">
+                   
+                </div>
+                <div class= "box snell2">
+                   
+                </div>
+                <img src="./CAMP_maps/CAMP_second_floor_plan.jpg" class ="center">
+          </div>    
           <div class="searchPopup">
             <div class="formPopup" id="popupSearch">
                 <form action="/action_page.php" class="formContainer">
                 <h2>Search</h2>
             
-                <button type="submit" class="btn">Go To</button>
+                <button type="button" class="btn" onclick="goTo()" id="goToBtn">Go To</button>
                 <button type="submit" class="btn">Directions To </button>
                 <button type="button" onclick="closeForm()">Close</button>
                 </form>
