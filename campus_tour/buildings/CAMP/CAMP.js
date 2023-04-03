@@ -52,7 +52,41 @@ function createHTMLElementAtCoordinatePair(xPercent, yPercent, parentElement) {
   });
 }
 
-async function openCSV(elementID) {
+async function openCSV1(elementID) {
+  const response = await fetch('../../CSV_files/CAMP_first_floor_table.csv');
+  const text = await response.text();
+  const results = Papa.parse(text, { header: true }).data;
+
+  const filteredResults = results.filter((row) => {
+    return row.Display === 'TRUE';
+    
+  });
+
+    filteredResults.forEach((row) => {
+    const x = row.XCoord;
+    const y = row.YCoord;
+    //processCoordinates(x, y);
+    createHTMLElementAtCoordinatePair(x, y, elementID)
+  });
+}
+async function openCSV2(elementID) {
+  const response = await fetch('../../CSV_files/CAMP_second_floor_table.csv');
+  const text = await response.text();
+  const results = Papa.parse(text, { header: true }).data;
+
+  const filteredResults = results.filter((row) => {
+    return row.Display === 'TRUE';
+    
+  });
+
+    filteredResults.forEach((row) => {
+    const x = row.XCoord;
+    const y = row.YCoord;
+    //processCoordinates(x, y);
+    createHTMLElementAtCoordinatePair(x, y, elementID)
+  });
+}
+async function openCSV3(elementID) {
   const response = await fetch('../../CSV_files/CAMP_third_floor_table.csv');
   const text = await response.text();
   const results = Papa.parse(text, { header: true }).data;

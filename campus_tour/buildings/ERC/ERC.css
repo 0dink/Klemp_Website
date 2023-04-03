@@ -5,7 +5,7 @@ h1{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 100%;
 }
 .Previous{
     font-size: 20px;
@@ -75,3 +75,20 @@ h1{
     margin-bottom: 0;
     background-color: #fff;
 }
+.parent {
+    position: relative;
+  }
+.parent .box{
+    position: absolute;
+    width: calc(1.6vw + 10px); 
+    height: calc(1.6vw + 10px);
+    background-color: rgba(238, 75, 43, 1);
+    display: -webkit-box;
+    height: 5px;
+    width: 5px;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
