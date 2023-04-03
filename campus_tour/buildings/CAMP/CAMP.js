@@ -12,11 +12,11 @@ function goTo(){
 
   var filename;
   if (prefix === "CA") {
-      if (floor === 1) {
+      if (floor === '1') {
           filename = "../../CSV_files/CAMP_first_floor_table.csv";
-      } else if (floor === 2) {
+      } else if (floor === '2') {
           filename = "../../CSV_files/CAMP_second_floor_table.csv";
-      } else if (floor === 3) {
+      } else if (floor === '3') {
           filename = "../../CSV_files/CAMP_third_floor_table.csv";
       } else{
           return null;
@@ -24,9 +24,9 @@ function goTo(){
   } else if (prefix === "SC") {
       if (floor === 1) {
           filename = "../../CSV_files/ScienceCenter_first_floor_table.csv";
-      } else if (floor === 2) {
+      } else if (floor === '2') {
           filename = "../../CSV_files/ScienceCenter_second_floor_table.csv";
-      } else if (floor === 3) {
+      } else if (floor === '3') {
           filename = "../../CSV_files/ScienceCenter_third_floor_table.csv";
       } else {
           return null;
@@ -34,11 +34,11 @@ function goTo(){
   } else if (prefix === "SN") {
       if (floor === 'B') {
           filename = "../../CSV_files/Snell_zero_floor_table.csv";
-      } else if (floor === 1) {
+      } else if (floor === '1') {
           filename = "../../CSV_files/Snell_first_floor_table.csv";
-      } else if (floor === 2) {
+      } else if (floor === '2') {
           filename = "../../CSV_files/Snell_second_floor_table.csv";
-      } else if (floor === 3) {
+      } else if (floor === '3') {
           filename = "../../CSV_files/Snell_third_floor_table.csv";
       } else {
           return null;
@@ -46,9 +46,9 @@ function goTo(){
   } else if (prefix === "ST") {
       if (floor === 'B') {
           filename = "../../CSV_files/StudentCenter_zero_floor_table.csv";
-      } else if (floor === 1) {
+      } else if (floor === '1') {
           filename = "../../CSV_files/StudentCenter_first_floor_table.csv";
-      } else if (floor === 2) {
+      } else if (floor === '2') {
           filename = "../../CSV_files/StudentCenter_second_floor_table.csv";
       } else {
           return null;
@@ -56,7 +56,7 @@ function goTo(){
   } else if (prefix === "ER") {
       if (floor === 1) {
           filename = "../../CSV_files/ERC_first_floor_table.csv";
-      } else if (floor === 2) {
+      } else if (floor === '2') {
           filename = "../../CSV_files/ERC_second_floor_table.csv";
       } else {
           return null;
@@ -64,7 +64,7 @@ function goTo(){
   } else if (prefix === "RO") {
       if (floor === 1) {
           filename = "../../CSV_files/Rowley_first_floor_table.csv";
-      } else if (floor === 2) {
+      } else if (floor === '2') {
           filename = "../../CSV_files/Rowley_second_floor_table.csv";
       } else {
           return null;
@@ -99,6 +99,7 @@ function goTo(){
 
   return null;
 }
+
 
 
 function closeForm() {
