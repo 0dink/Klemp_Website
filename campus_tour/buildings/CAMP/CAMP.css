@@ -52,6 +52,7 @@ h1{
 .column_3{
     float: left;
     width: 15%;
+    padding: 10px;
 }
 .searchPopup {
     position: relative;
@@ -90,13 +91,4 @@ h1{
             justify-content: center;
     -webkit-box-align: center;
             align-items: center;
-  }
-  .parent .box.snell{
-    top: 8%;
-    left: 33%;
-    z-index: 10;
-  }
-  .parent .box.snell2{
-    top: 7%;
-    left: 47%;
   }
