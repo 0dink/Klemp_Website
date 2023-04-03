@@ -39,7 +39,7 @@ img.filter-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
 }
 
 .Back_to_Main{
@@ -53,12 +53,10 @@ h1{
 .column_1{
     float: left;
     width: 10%;
-    padding: 5px;
 }
 .column_2{
     float: left;
     width: 85%;
-    padding: 5px;
 }
 
 .up {
@@ -104,4 +102,21 @@ h1{
     background-color: #fff;
 }
 
+.parent {
+    position: relative;
+  }
+.parent .box{
+    position: absolute;
+    width: calc(1.6vw + 10px); 
+    height: calc(1.6vw + 10px);
+    background-color: rgba(238, 75, 43, 1);
+    display: -webkit-box;
+    height: 5px;
+    width: 5px;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  } 
 
