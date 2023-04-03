@@ -13,59 +13,59 @@ function goTo(){
     var filename;
     if (prefix === "CA") {
         if (floor === 1) {
-            filename = "../../CSV_files/CAMP1.csv";
+            filename = "../../CSV_files/CAMP_first_floor_table.csv";
         } else if (floor === 2) {
-            filename = "../../CSV_files/CAMP2.csv";
+            filename = "../../CSV_files/CAMP_second_floor_table.csv";
         } else if (floor === 3) {
-            filename = "../../CSV_files/CAMP3.csv";
+            filename = "../../CSV_files/CAMP_third_floor_table.csv";
         } else{
             return null;
         }
     } else if (prefix === "SC") {
         if (floor === 1) {
-            filename = "../../CSV_files/ScienceCenter1.csv";
+            filename = "../../CSV_files/ScienceCenter_first_floor_table.csv";
         } else if (floor === 2) {
-            filename = "../../CSV_files/ScienceCenter2.csv";
+            filename = "../../CSV_files/ScienceCenter_second_floor_table.csv";
         } else if (floor === 3) {
-            filename = "../../CSV_files/ScienceCenter3.csv";
+            filename = "../../CSV_files/ScienceCenter_third_floor_table.csv";
         } else {
             return null;
         }
     } else if (prefix === "SN") {
         if (floor === 'B') {
-            filename = "../../CSV_files/SnellB.csv";
+            filename = "../../CSV_files/Snell_zero_floor_table.csv";
         } else if (floor === 1) {
-            filename = "../../CSV_files/Snell1.csv";
+            filename = "../../CSV_files/Snell_first_floor_table.csv";
         } else if (floor === 2) {
-            filename = "../../CSV_files/Snell2.csv";
+            filename = "../../CSV_files/Snell_second_floor_table.csv";
         } else if (floor === 3) {
-            filename = "../../CSV_files/Snell2.csv";
+            filename = "../../CSV_files/Snell_third_floor_table.csv";
         } else {
             return null;
         }
     } else if (prefix === "ST") {
         if (floor === 'B') {
-            filename = "../../CSV_files/StudentCenterB.csv";
+            filename = "../../CSV_files/StudentCenter_zero_floor_table.csv";
         } else if (floor === 1) {
-            filename = "../../CSV_files/StudentCenter2.csv";
+            filename = "../../CSV_files/StudentCenter_first_floor_table.csv";
         } else if (floor === 2) {
-            filename = "../../CSV_files/StudentCenter3.csv";
+            filename = "../../CSV_files/StudentCenter_second_floor_table.csv";
         } else {
             return null;
         }
     } else if (prefix === "ER") {
         if (floor === 1) {
-            filename = "../../CSV_files/ERC1.csv";
+            filename = "../../CSV_files/ERC_first_floor_table.csv";
         } else if (floor === 2) {
-            filename = "../../CSV_files/ERC2.csv";
+            filename = "../../CSV_files/ERC_second_floor_table.csv";
         } else {
             return null;
         }
     } else if (prefix === "RO") {
         if (floor === 1) {
-            filename = "../../CSV_files/Rowley1.csv";
+            filename = "../../CSV_files/Rowley_first_floor_table.csv";
         } else if (floor === 2) {
-            filename = "../../CSV_files/Rowley2.csv";
+            filename = "../../CSV_files/Rowley_second_floor_table.csv";
         } else {
             return null;
         }
