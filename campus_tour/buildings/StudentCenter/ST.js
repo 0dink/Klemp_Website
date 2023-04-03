@@ -12,10 +12,18 @@ function goTo(){
 
     var filename;
     if (prefix === "CA") {
-        filename = "CAMP_first_floor_table.csv"; 
+        filename = "/CAMP.csv"; 
     } else if (prefix === "SC") {
-        filename = "file2.csv";
-    } else {
+        filename = "../../CSV/StudentCenter.csv";
+    } else if(prefix === "SN"){
+        filename = "../../CSV/Snell.csv";
+    } else if(prefix === "ST"){
+       filename === "../../CSV/StudentCenter.csv"
+    } else if(prefix === "ER"){
+        filename ==="../../CSV/ERC.csv";
+    } else if(prefix === "RO"){
+        filename === "../../CSV/Rowley.csv"
+    } else{
         return null; 
     }
 
@@ -36,10 +44,10 @@ function goTo(){
         if (row[roomNameIndex] === realRoomName) {
             var coords = [row[xCoordIndex], row[yCoordIndex]];
             var path = row[pathIndex];
-            var display = row[displayIndex];
-            console.log(coords);
-            window.location.href = path;
-            return [coords, path, display];
+            //var display = row[displayIndex];
+            row[displayIndex] = "TRUE"; // change the value in the display column to "TRUE"
+            window.location.href = window.location.href = path.replace(/"/g, '');;
+            return [coords, path];
         }
     }
 
