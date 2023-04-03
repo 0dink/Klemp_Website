@@ -1,6 +1,5 @@
     <html lang="en">
     <head>
-        <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://webspace.clarkson.edu">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,36 +8,36 @@
         <script src="ST.js"></script>
     </head>
 
-    <body>
-        <div class="row">
-            <div class="column_1">
-                <a href="StudentCenter.html"> <button class="Previous"> &laquo; Back</button> </a>
-                <a href="../../MainView.html"> <button class="Back_to_Main"> Main View</button></a>
-                <p>Floor Navigation</p>
-                <div class="column_3">
-                    <a href="StudentCenter_one.html"><i class="arrow down"></i></a>
-                </div>
-                <input type="text" id="searchTXT" placeholder="Search..">
-                <button onclick="searchbar()">Search</button>
+<body>
+    <div class="row">
+        <div class="column_1">
+            <a href="StudentCenter.html"> <button class="Previous"> &laquo; Back</button> </a>
+            <a href="../../MainView.html"> <button class="Back_to_Main"> Main View</button></a>
+            <p>Floor Navigation</p>
+            <div class="column_3">
+                <a href="StudentCenter_one.html"><i class="arrow down"></i></a>
             </div>
+            <input type="text" id="searchTXT" placeholder="Search..">
+            <button onclick="searchbar()">Search</button>
+        </div>
 
 
-            <div class="column_2">
-                <h1>Student Center Second Floor</h1>
-                <div class="parent">
-                    <img src="./StudentCenter_maps/StudentCenter_second_floor.jpg" class="center">
-                </div>
-            </div>
-            <div class="searchPopup">
-                <div class="formPopup" id="popupSearch">
-                    <form class="formContainer">
-                        <h2>Search</h2>
-                        <button type="button" class="btn" onclick="goTo()" id="goToBtn">Go To</button>
-                        <button type="submit" class="btn" onclick="directionsTo()" id="directionsToBtn">Directions To </button>
-                        <button type="button" onclick="closeForm()">Close</button>
-                    </form>
-                </div>
+        <div class="column_2">
+            <h1>Student Center Second Floor</h1>
+            <div class="parent">
+                <img src="./StudentCenter_maps/StudentCenter_second_floor.jpg" class="center">
             </div>
         </div>
-    </body>
-    </html>
+        <div class="searchPopup">
+            <div class="formPopup" id="popupSearch">
+                <form class="formContainer">
+                    <h2>Search</h2>
+                    <button type="button" class="btn" onclick="goTo()" id="goToBtn">Go To</button>
+                    <button type="submit" class="btn" onclick="directionsTo()" id="directionsToBtn">Directions To </button>
+                    <button type="button" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
