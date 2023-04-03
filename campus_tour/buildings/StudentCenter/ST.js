@@ -7,9 +7,8 @@ function searchbar() {
 
 function goTo(){
     var searchValue = roomName; 
-    var prefix = searchValue.slice(0, 2); // extract the first two characters of the search value
-    var realRoomName = searchValue.substring(2);;
-
+    var prefix = searchValue.slice(0, 2); // extr   act the first two characters of the search value
+    var realRoomName = searchValue.substring(2);
     var filename;
     if (prefix === "CA") {
         filename = "/CAMP.csv"; 
@@ -26,7 +25,7 @@ function goTo(){
     } else{
         return null; 
     }
-
+    alert(filename)
     var xhr = new XMLHttpRequest();
     xhr.open("GET", filename, false); 
     xhr.send(null);
@@ -44,10 +43,21 @@ function goTo(){
         if (row[roomNameIndex] === realRoomName) {
             var coords = [row[xCoordIndex], row[yCoordIndex]];
             var path = row[pathIndex];
+<<<<<<< Updated upstream
             //var display = row[displayIndex];
             row[displayIndex] = "TRUE"; // change the value in the display column to "TRUE"
             window.location.href = window.location.href = path.replace(/"/g, '');;
             return [coords, path];
+=======
+            var display = row[displayIndex];
+            console.log(coords);
+            //alert(window.location.href);
+            //alert(path);
+            //window.location.href = "../../CAMP/CAMP_one.html";
+            window.location.replace(path);
+            
+            return [coords, path, display];
+>>>>>>> Stashed changes
         }
     }
 
