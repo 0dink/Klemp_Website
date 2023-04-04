@@ -22,7 +22,7 @@ function goTo(){
           return null;
       }
   } else if (prefix === "SC") {
-      if (floor === 1) {
+      if (floor === '1') {
           filename = "../../CSV_files/ScienceCenter_first_floor_table.csv";
       } else if (floor === '2') {
           filename = "../../CSV_files/ScienceCenter_second_floor_table.csv";
@@ -54,7 +54,7 @@ function goTo(){
           return null;
       }
   } else if (prefix === "ER") {
-      if (floor === 1) {
+      if (floor === '1') {
           filename = "../../CSV_files/ERC_first_floor_table.csv";
       } else if (floor === '2') {
           filename = "../../CSV_files/ERC_second_floor_table.csv";
@@ -62,7 +62,7 @@ function goTo(){
           return null;
       }
   } else if (prefix === "RO") {
-      if (floor === 1) {
+      if (floor === '1') {
           filename = "../../CSV_files/Rowley_first_floor_table.csv";
       } else if (floor === '2') {
           filename = "../../CSV_files/Rowley_second_floor_table.csv";
