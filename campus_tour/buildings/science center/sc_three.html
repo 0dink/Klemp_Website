@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Science Center Floor 3</title>
     <link href="sc.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0"></script>
     <script src="sc.js"></script>
     <style>
         body {
@@ -15,7 +16,7 @@
     </style>
 </head>
 
-<body>
+<body onload = "openCSV2(document.getElementById('parent'))">
   <div class = "row">
           <div class ="column_1">
               <a href = "sc.html"> <button class = "Previous"> &laquo; Back</button> </a>
@@ -29,8 +30,10 @@
           </div>
       
           <div class = "column_2">
-              <h1>Science Center Third Floor</h1>
-              <img src="./sc_maps/ScienceCenter_third_floor_plan.png" class ="center">
+            <h1>Science Center Third Floor</h1>
+            <div id="parent" class = "parent">
+                <img src="./sc_maps/ScienceCenter_third_floor_plan.png" class ="center">
+            </div>
           </div>
           <div class="searchPopup">
             <div class="formPopup" id="popupSearch">
