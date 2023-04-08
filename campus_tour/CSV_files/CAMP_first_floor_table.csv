@@ -1,5 +1,5 @@
 RoomName,XCoord,YCoord,Path,Display
-167,33.252,8.0078,"https://webspace.clarkson.edu/projects/KLEMP/public_html/Klemp_Website-main/campus_tour/buildings/CAMP/CAMP_one.html",TRUE
+167,33.252,8.0078,"http://127.0.0.1:5500/campus_tour/buildings/CAMP/CAMP_one.html",FALSE
 166,32.0801,10.4004,"https://webspace.clarkson.edu/projects/KLEMP/public_html/Klemp_Website-main/campus_tour/buildings/CAMP/CAMP_one.html",TRUE
 C1000K,34.082,11.8164,"https://webspace.clarkson.edu/projects/KLEMP/public_html/Klemp_Website-main/campus_tour/buildings/CAMP/CAMP_one.html",FALSE
 164,30.9082,12.8418,"https://webspace.clarkson.edu/projects/KLEMP/public_html/Klemp_Website-main/campus_tour/buildings/CAMP/CAMP_one.html",FALSE

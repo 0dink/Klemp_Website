@@ -6,6 +6,10 @@
     <title>CAMP Floor 1</title>
     <link href="CAMP.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0"></script>
+    <!--
+    <script src="parse.js"></script>
+    -->
+    <script src="../../CSV_files/CAMP_onload.js"></script>
     <script src="CAMP.js"></script>
     <style>
         body {
@@ -16,7 +20,7 @@
     </style>
 </head>
 
-<body onload = "openCSV1(document.getElementById('parent'))">
+<body onload = "searchAndCreate1(document.getElementById('parent'))">
   <div class = "row">
           <div class ="column_1">
               <a href = "CAMP.html"> <button class = "Previous"> &laquo; Back</button> </a>
@@ -41,7 +45,12 @@
                 <h2>Search</h2>
             
                 <button type="button" class="btn" onclick="goTo()" id="goToBtn">Go To</button>
-                <button type="submit" class="btn">Directions To </button>
+                
+                <button type="button" class="btn" onclick="inverse()">Directions To </button>
+                
+                <!--
+                <button type="button" class="btn" onclick="searchAndCreate(document.getElementById('parent'))">Directions To </button>
+                -->
                 <button type="button" onclick="closeForm()">Close</button>
                 </form>
             </div>
