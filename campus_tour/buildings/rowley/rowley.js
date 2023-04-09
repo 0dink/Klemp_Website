@@ -9,94 +9,113 @@ function goTo(){
   var prefix = roomName.slice(0, 2); // extract the first two characters of the search value
   var floor = roomName.slice(2, 3);
   var realRoomName = roomName.substring(2);
-
+  var saveto;
   var filename;
+  
   if (prefix === "CA") {
-      if (floor === '1') {
-          filename = "../../CSV_files/CAMP_first_floor_table.csv";
-      } else if (floor === '2') {
-          filename = "../../CSV_files/CAMP_second_floor_table.csv";
-      } else if (floor === '3') {
-          filename = "../../CSV_files/CAMP_third_floor_table.csv";
-      } else{
-          return null;
-      }
-  } else if (prefix === "SC") {
-      if (floor === '1') {
-          filename = "../../CSV_files/ScienceCenter_first_floor_table.csv";
-      } else if (floor === '2') {
-          filename = "../../CSV_files/ScienceCenter_second_floor_table.csv";
-      } else if (floor === '3') {
-          filename = "../../CSV_files/ScienceCenter_third_floor_table.csv";
-      } else {
-          return null;
-      }
-  } else if (prefix === "SN") {
-      if (floor === 'B') {
-          filename = "../../CSV_files/Snell_zero_floor_table.csv";
-      } else if (floor === '1') {
-          filename = "../../CSV_files/Snell_first_floor_table.csv";
-      } else if (floor === '2') {
-          filename = "../../CSV_files/Snell_second_floor_table.csv";
-      } else if (floor === '3') {
-          filename = "../../CSV_files/Snell_third_floor_table.csv";
-      } else {
-          return null;
-      }
-  } else if (prefix === "ST") {
-      if (floor === 'B') {
-          filename = "../../CSV_files/StudentCenter_zero_floor_table.csv";
-      } else if (floor === '1') {
-          filename = "../../CSV_files/StudentCenter_first_floor_table.csv";
-      } else if (floor === '2') {
-          filename = "../../CSV_files/StudentCenter_second_floor_table.csv";
-      } else {
-          return null;
-      }
-  } else if (prefix === "ER") {
-      if (floor === '1') {
-          filename = "../../CSV_files/ERC_first_floor_table.csv";
-      } else if (floor === '2') {
-          filename = "../../CSV_files/ERC_second_floor_table.csv";
-      } else {
-          return null;
-      }
-  } else if (prefix === "RO") {
-      if (floor === '1') {
-          filename = "../../CSV_files/Rowley_first_floor_table.csv";
-      } else if (floor === '2') {
-          filename = "../../CSV_files/Rowley_second_floor_table.csv";
-      } else {
-          return null;
-      }
-  } else {
-      return null;
-  }
-  alert(filename)
-  var xhr = new XMLHttpRequest();
-  xhr.open("GET", filename, false); 
-  xhr.send(null);
+    if (floor === '1') {
+        //filename = "../../CSV_files/CAMP_first_floor_table.csv";
+         filename = JSON.parse(localStorage.getItem('CAMP1_Array'));
+         saveto = 'CAMP1_Array';
+    } else if (floor === '2') {
+        //filename = "../../CSV_files/CAMP_second_floor_table.csv";
+        filename = JSON.parse(localStorage.getItem('CAMP2_Array'));
+        saveto = 'CAMP2_Array';
+    } else if (floor === '3') {
+        //filename = "../../CSV_files/CAMP_third_floor_table.csv";
+        filename = JSON.parse(localStorage.getItem('CAMP3_Array'));
+        saveto = 'CAMP3_Array'
+    } else{
+        return null;
+    }
+} else if (prefix === "SC") {
+    if (floor === '1') {
+        //filename = "../../CSV_files/ScienceCenter_first_floor_table.csv";
+        filename = JSON.parse(localStorage.getItem('SC1_Array'));
+        saveto = 'SC1_Array';
+    } else if (floor === '2') {
+        filename = JSON.parse(localStorage.getItem('SC2_Array'));
+        saveto = 'SC2_Array';
+        //filename = "../../CSV_files/ScienceCenter_second_floor_table.csv";
+    } else if (floor === '3') {
+        filename = JSON.parse(localStorage.getItem('SC3_Array'));
+        saveto = 'SC3_Array';
+        //filename = "../../CSV_files/ScienceCenter_third_floor_table.csv";
+    } else {
+        return null;
+    }
+} else if (prefix === "SN") {
+    if (floor === 'B') {
+        filename = JSON.parse(localStorage.getItem('SNB_Array'));
+        saveto = 'SNB_Array';
+        //filename = "../../CSV_files/Snell_zero_floor_table.csv";
+    } else if (floor === '1') {
+      filename = JSON.parse(localStorage.getItem('SN1_Array'));
+      saveto = 'SN1_Array';
+        //filename = "../../CSV_files/Snell_first_floor_table.csv";
+    } else if (floor === '2') {
+      filename = JSON.parse(localStorage.getItem('SN2_Array'));
+      saveto = 'SN2_Array';
+        //filename = "../../CSV_files/Snell_second_floor_table.csv";
+    } else if (floor === '3') {
+      filename = JSON.parse(localStorage.getItem('SN3_Array'));
+      saveto = 'SN3_Array';
+        //filename = "../../CSV_files/Snell_third_floor_table.csv";
+    } else {
+        return null;
+    }
+} else if (prefix === "ST") {
+    if (floor === 'B') {
+      filename = JSON.parse(localStorage.getItem('STB_Array'));
+      saveto = 'STB_Array';
+        //filename = "../../CSV_files/StudentCenter_zero_floor_table.csv";
+    } else if (floor === '1') {
+      filename = JSON.parse(localStorage.getItem('ST1_Array'));
+      saveto = 'ST1_Array';
+        //filename = "../../CSV_files/StudentCenter_first_floor_table.csv";
+    } else if (floor === '2') {
+      filename = JSON.parse(localStorage.getItem('ST2_Array'));
+      saveto = 'ST2_Array';
+        //filename = "../../CSV_files/StudentCenter_second_floor_table.csv";
+    } else {
+        return null;
+    }
+} else if (prefix === "ER") {
+    if (floor === '1') {
+      filename = JSON.parse(localStorage.getItem('ER1_Array'));
+      saveto = 'ER1_Array';
+        //filename = "../../CSV_files/ERC_first_floor_table.csv";
+    } else if (floor === '2') {
+      filename = JSON.parse(localStorage.getItem('ER2_Array'));
+      saveto = 'ER2_Array';
+        //filename = "../../CSV_files/ERC_second_floor_table.csv";
+    } else {
+        return null;
+    }
+} else if (prefix === "RO") {
+    if (floor === '1') {
+      filename = JSON.parse(localStorage.getItem('RO1_Array'));
+      saveto = 'RO1_Array';
+        //filename = "../../CSV_files/Rowley_first_floor_table.csv";
+    } else if (floor === '2') {
+      filename = JSON.parse(localStorage.getItem('RO2_Array'));
+      saveto = 'RO2_Array';
+        //filename = "../../CSV_files/Rowley_second_floor_table.csv";
+    } else {
+        return null;
+    }
+} else {
+    return null;
+}
 
-  var rows = xhr.responseText.split("\n");
-  var headerRow = rows[0].split(",");
-  var roomNameIndex = headerRow.indexOf("RoomName");
-  var xCoordIndex = headerRow.indexOf("XCoord");
-  var yCoordIndex = headerRow.indexOf("YCoord");
-  var pathIndex = headerRow.indexOf("Path");
-  var displayIndex = headerRow.indexOf("Display");
-
-  for (var i = 1; i < rows.length; i++) {
-      var row = rows[i].split(",");
-      if (row[roomNameIndex] === realRoomName) {
-          var coords = [row[xCoordIndex], row[yCoordIndex]];
-          var path = row[pathIndex];
-          //var display = row[displayIndex];
-          row[displayIndex] = "TRUE"; // change the value in the display column to "TRUE"
-          window.location.href = window.location.href = path.replace(/"/g, '');;
-          return [coords, path];
-      }
-  }
-
+for (var i = 0; i < filename.length; i++){
+    if (filename[i].RoomName === realRoomName) {
+        filename[i].Display = 'true';
+        console.log(filename)
+        localStorage.setItem(saveto, JSON.stringify(filename)); // Save the updated dataArray back to localStorage
+        window.location.href = window.location.href = filename[i].Path.replace(/"/g, '');
+    }
+  } 
   return null;
 }
 
@@ -150,7 +169,7 @@ function createHTMLElementAtCoordinatePair(xPercent, yPercent, parentElement) {
 }
 
 async function openCSV1(elementID) {
-  const response = await fetch('../../CSV_files/CAMP_first_floor_table.csv');
+  const response = await fetch('../../CSV_files/rowley_first_floor_table.csv');
   const text = await response.text();
   const results = Papa.parse(text, { header: true }).data;
 
@@ -167,24 +186,7 @@ async function openCSV1(elementID) {
   });
 }
 async function openCSV2(elementID) {
-  const response = await fetch('../../CSV_files/CAMP_second_floor_table.csv');
-  const text = await response.text();
-  const results = Papa.parse(text, { header: true }).data;
-
-  const filteredResults = results.filter((row) => {
-    return row.Display === 'TRUE';
-    
-  });
-
-    filteredResults.forEach((row) => {
-    const x = row.XCoord;
-    const y = row.YCoord;
-    //processCoordinates(x, y);
-    createHTMLElementAtCoordinatePair(x, y, elementID)
-  });
-}
-async function openCSV3(elementID) {
-  const response = await fetch('../../CSV_files/CAMP_third_floor_table.csv');
+  const response = await fetch('../../CSV_files/rowley_second_floor_table.csv');
   const text = await response.text();
   const results = Papa.parse(text, { header: true }).data;
 
