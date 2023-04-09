@@ -1,4 +1,4 @@
-function RO1_CSV_to_Array() {
+function ERC1_CSV_to_Array() {
     var xhr = new XMLHttpRequest();// Create a new XMLHttpRequest object
     
     xhr.onload = function() {// Set the onload callback function
@@ -17,21 +17,20 @@ function RO1_CSV_to_Array() {
           dataArray.push(obj);
         }
         
-        localStorage.setItem('RO1_Array', JSON.stringify(dataArray));// Store the array in localStorage
+        localStorage.setItem('ER1_Array', JSON.stringify(dataArray));// Store the array in localStorage
 
-        console.log('rowley1 First element:', dataArray[1]);
-        //console.log('First element:', dataArray[2]);
-        //console.log('First element:', dataArray[3]);
+        console.log('ERC1 First element:', dataArray[1]);
+  
       }
     };
     
-    var file = './campus_tour/CSV_files/rowley_first_floor_table.csv';  // Set the default file path
+    var file = './campus_tour/CSV_files/ERC_first_floor_table.csv';  // Set the default file path
 
     xhr.open('GET', file, true);// Open the file and send the request
     xhr.send();
   }
   
-  function RO2_CSV_to_Array() {
+  function ERC2_CSV_to_Array() {
     var xhr = new XMLHttpRequest();// Create a new XMLHttpRequest object
     
     xhr.onload = function() {// Set the onload callback function
@@ -50,15 +49,13 @@ function RO1_CSV_to_Array() {
           dataArray.push(obj);
         }
         
-        localStorage.setItem('RO2_Array', JSON.stringify(dataArray));// Store the array in localStorage
+        localStorage.setItem('ER2_Array', JSON.stringify(dataArray));// Store the array in localStorage
 
-        console.log('rowley 2 First element:', dataArray[1]);
-        //console.log('First element:', dataArray[2]);
-        //console.log('First element:', dataArray[3]);
+        console.log('ERC2 First element:', dataArray[1]);
       }
     };
     
-    var file = './campus_tour/CSV_files/rowley_second_floor_table.csv';  // Set the default file path
+    var file = './campus_tour/CSV_files/ERC_second_floor_table.csv';  // Set the default file path
 
     xhr.open('GET', file, true);// Open the file and send the request
     xhr.send();

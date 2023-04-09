@@ -176,7 +176,8 @@ function searchAndCreate1(element_ID) {
     } else {
       console.log('myDataArray is null or undefined. Please load CSV data first.');
     }
-  }function searchAndCreate2(element_ID) {
+}
+  function searchAndCreate2(element_ID) {
     // Retrieve the array from localStorage
     var dataArray = JSON.parse(localStorage.getItem('CAMP2_Array'));
     console.log(dataArray[1])

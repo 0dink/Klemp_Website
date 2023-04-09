@@ -1,2 +1,5 @@
-hello world
-test 2 
+make changes to the CSV files so that there are no new lines between Paths and Display Paths
+
+if the search feature does not work during testing its most likley due to the aformentioned problem 
+
+this will result in dataArray[i].Display being undefined 

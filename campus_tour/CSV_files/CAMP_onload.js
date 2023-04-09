@@ -19,9 +19,7 @@ function CAMP1_CSV_to_Array() {
         
         localStorage.setItem('CAMP1_Array', JSON.stringify(dataArray));// Store the array in localStorage
 
-        console.log('First element:', dataArray[1]);
-        console.log('First element:', dataArray[2]);
-        console.log('First element:', dataArray[3]);
+        console.log('CAMP1 First element:', dataArray[1]);
       }
     };
     
@@ -51,9 +49,7 @@ function CAMP1_CSV_to_Array() {
         
         localStorage.setItem('CAMP2_Array', JSON.stringify(dataArray));// Store the array in localStorage
 
-        console.log('First element:', dataArray[1]);
-        console.log('First element:', dataArray[2]);
-        console.log('First element:', dataArray[3]);
+        console.log('CAMP2 First element:', dataArray[1]);
       }
     };
     
@@ -83,9 +79,7 @@ function CAMP1_CSV_to_Array() {
         
         localStorage.setItem('CAMP3_Array', JSON.stringify(dataArray));// Store the array in localStorage
 
-        console.log('First element:', dataArray[1]);
-        console.log('First element:', dataArray[2]);
-        console.log('First element:', dataArray[3]);
+        console.log('CAMP3 First element:', dataArray[1]);
       }
     };
     
