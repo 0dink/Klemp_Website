@@ -570,3 +570,31 @@ body {
   margin-bottom: 0;
   background-color: #fff;
 }
+
+#pricePin{
+  display: none;
+}
+
+#quadPin{
+  display: none;
+}
+
+#cheelPin{
+  display: none;
+}
+
+#rowleyPin{
+  display: none;
+}
+
+#campPin{
+  display: none;
+}
+
+#scPin{
+  display: none;
+}
+
+#snellPin{
+  display: none;
+}

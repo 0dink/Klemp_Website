@@ -1,14 +1,80 @@
-/*function importData() {
-  let input = document.createElement('input');
-  input.type = 'file';
-  input.onchange = _ => {
-    // you can use this method to get file and perform respective operations
-            let files =   Array.from(input.files);
-            console.log(files);
-        };
-  input.click();
-  
-}*/
+function dispLocation(locations) {
+
+  let snellImg = document.getElementById('snellPin');
+  let scImg = document.getElementById('scPin');
+  let campImg = document.getElementById('campPin');
+  let rowleyImg = document.getElementById('rowleyPin');
+  let cheelImg = document.getElementById('cheelPin');
+  let quadImg = document.getElementById('quadPin');
+  let priceImg = document.getElementById('pricePin');
+
+  let snell = locations.includes("Bertrand");
+  let sc = locations.includes("Science");
+  let camp = locations.includes("CAMP");
+  let rowley = locations.includes("Rowley");
+  let cheel = locations.includes("Cheel");
+  let quad = locations.includes("Quad");
+  let price = locations.includes("Price");
+
+  if(snell)
+  {
+    snellImg.style.display = 'block';
+  }
+  if(sc)
+  {
+    scImg.style.display = 'block';
+  }
+  if(camp)
+  {
+    campImg.style.display = 'block';
+  }
+  if(rowley)
+  {
+    rowleyImg.style.display = 'block';
+  }
+  if(cheel)
+  {
+    cheelImg.style.display = 'block';
+  }
+  if(quad)
+  {
+    quadImg.style.display = 'block';
+  }
+  if(price)
+  {
+    priceImg.style.display = 'block';
+  }
+
+  var finalList = ' ';
+
+  if(snell)
+  {
+    finalList += "You have class in Snell" + ' ';
+  }
+  if(sc)
+  {
+    finalList += "You have class in Science Center" + ' ';
+  }
+  if(camp)
+  {
+    finalList += "You have class in CAMP" + ' ';
+  }
+  if(ro)
+  {
+    finalList += "You have class in Rowley Labs" + ' ';
+  }
+  if(cheel)
+  {
+    finalList += "You have class in Cheel" + ' ';
+  }
+  if(quad)
+  {
+    finalList += "You have class in the Quad" + ' ';
+  }
+
+  document.getElementById('demo').innerHTML= finalList;
+
+}
 
 function dispFile(contents)
 {
@@ -34,6 +100,7 @@ function dispFile(contents)
   text += "</ul>";
  
   document.getElementById('contents').innerHTML= text;
+  dispLocation(locations);
 }
 
 function clickElem(elem)
