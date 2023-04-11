@@ -44,6 +44,10 @@ body {
   left: 53%;
 }
 
+#snellPin{
+  display: none;
+}
+
 .snell .tooltiptext{
   visibility: hidden;
   width: 400px;
@@ -64,12 +68,6 @@ body {
   left: 50%;
   top: -5px;
   visibility: visible;
-}
-
-.snellPin{
-  display: none;
-  height: 200px;
-  width: 200px;
 }
 
 .parent .box.sc{
@@ -97,12 +95,6 @@ body {
     visibility: visible;
   }
 
-  .scPin{
-    display: none;
-    height: 200px;
-    width: 200px;
-  }
-
   .parent .box.erc{
     top: 62.5%;
     left: 39.5%;
@@ -127,12 +119,6 @@ body {
     visibility: visible;
   }
 
-  .ercPin{
-    display: none;
-    height: 200px;
-    width: 200px;
-  }
-
 .parent .box.st{
     top: 58%;
     left: 36.5%;
@@ -155,12 +141,6 @@ body {
     left: 50%;
     top: -5px;
     visibility: visible;
-  }
-
-  .stPin{
-    display: none;
-    height: 200px;
-    width: 200px;
   }
 
   .parent .box.camp{
@@ -188,12 +168,6 @@ body {
     visibility: visible;
   }
 
-  .campPin{
-    display: none;
-    height: 200px;
-    width: 200px;
-  }
-
   .parent .box.rowley{
     top: 70%;
     left: 33%;
@@ -219,11 +193,6 @@ body {
     visibility: visible;
   }
 
-  .rowleyPin{
-    display: none;
-    height: 200px;
-    width: 200px;
-  }
 
   .parent .box.cheel{
     top: 40%;
@@ -250,13 +219,7 @@ body {
     visibility: visible;
   }
 
-  .cheelPin{
-    display: none;
-    height: 200px;
-    width: 200px;
-  }
-
-  .parent .box.quad{
+.parent .box.quad{
     top: 19%;
     left: 43%;
   }
@@ -279,12 +242,6 @@ body {
     left: 50%;
     top: -5px;
     visibility: visible;
-  }
-
-  .quadPin{
-    display: none;
-    height: 200px;
-    width: 200px;
   }
 
   .parent .box.pit{
@@ -364,12 +321,6 @@ body {
   .parent .box.graham{
     top: 49%;
     left: 37.5%;
-  }
-
-  .pricePin{
-    display: none;
-    height: 200px;
-    width: 200px;
   }
 
 .graham .tooltiptext{
@@ -595,6 +546,3 @@ body {
   display: none;
 }
 
-#snellPin{
-  display: none;
-}

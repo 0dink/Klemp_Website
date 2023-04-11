@@ -1,85 +1,59 @@
 function dispLocation(locations) {
+    //building checks
+    let snell = locations.includes("Bertrand");
+    let sc = locations.includes("Science");
+    let camp = locations.includes("CAMP");
+    let ro = locations.includes("Rowley");
+    let cheel = locations.includes("Cheel");
+    let quad = locations.includes("Quad");
+    let price = locations.includes("Price");
 
-  let snellImg = document.getElementById('snellPin');
-  let scImg = document.getElementById('scPin');
-  let campImg = document.getElementById('campPin');
-  let rowleyImg = document.getElementById('rowleyPin');
-  let cheelImg = document.getElementById('cheelPin');
-  let quadImg = document.getElementById('quadPin');
-  let priceImg = document.getElementById('pricePin');
-
-  let snell = locations.includes("Bertrand");
-  let sc = locations.includes("Science");
-  let camp = locations.includes("CAMP");
-  let rowley = locations.includes("Rowley");
-  let cheel = locations.includes("Cheel");
-  let quad = locations.includes("Quad");
-  let price = locations.includes("Price");
-
-  if(snell)
-  {
-    snellImg.style.display = 'block';
-  }
-  if(sc)
-  {
-    scImg.style.display = 'block';
-  }
-  if(camp)
-  {
-    campImg.style.display = 'block';
-  }
-  if(rowley)
-  {
-    rowleyImg.style.display = 'block';
-  }
-  if(cheel)
-  {
-    cheelImg.style.display = 'block';
-  }
-  if(quad)
-  {
-    quadImg.style.display = 'block';
-  }
-  if(price)
-  {
-    priceImg.style.display = 'block';
-  }
-
-  var finalList = ' ';
-
-  if(snell)
-  {
-    finalList += "You have class in Snell" + ' ';
-  }
-  if(sc)
-  {
-    finalList += "You have class in Science Center" + ' ';
-  }
-  if(camp)
-  {
-    finalList += "You have class in CAMP" + ' ';
-  }
-  if(ro)
-  {
-    finalList += "You have class in Rowley Labs" + ' ';
-  }
-  if(cheel)
-  {
-    finalList += "You have class in Cheel" + ' ';
-  }
-  if(quad)
-  {
-    finalList += "You have class in the Quad" + ' ';
-  }
-
-  document.getElementById('demo').innerHTML= finalList;
-
+    //image declarations
+    let snellImg = document.getElementById("snellPin");
+    let scImg = document.getElementById("scPin");
+    let campImg = document.getElementById("campPin");
+    let roImg = document.getElementById("rowleyPin");
+    let cheelImg = document.getElementById("cheelPin");
+    let quadImg = document.getElementById("quadPin");
+    let priceImg = document.getElementById("pricePin");
+  
+    if(snell)
+    {
+      snellImg.style.display = 'block';
+    }
+    if(sc)
+    {
+      scImg.style.display = 'block';
+    }
+    if(camp)
+    {
+      campImg.style.display = 'block';
+    }
+    if(ro)
+    {
+      roImg.style.display = 'block';
+    }
+    if(cheel)
+    {
+      cheelImg.style.display = 'block';
+    }
+    if(quad)
+    {
+      quadImg.style.display = 'block';
+    }
+    if(price)
+    {
+      priceImg.style.display = 'block';
+    }
 }
+
+
 
 function dispFile(contents)
 {
   let numClasses = count(contents,"DESCRIPTION:");
   let text = "<ul id= 'schedule'>";
+  var locations;
 
   for(i =1; i <= numClasses; i++)
   {
@@ -95,6 +69,7 @@ function dispFile(contents)
 
     contents = contents.slice(endLocationPos + 3);
     text += "<li>" + className + ' ' + classLocation +"</li>";
+    locations += classLocation + ' ';
   }
 
   text += "</ul>";
