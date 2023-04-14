@@ -18,7 +18,7 @@
         <button onclick="searchbar()">Search</button>
         
       <button onclick="openFile(dispFile)">Upload Schedule</button>
-      <button>Reset Map</button>
+      
       <div class="dropdown">
         <button class = "dropbtn">360 Videos of Campus</button>
         <div class="dropdown-content">
@@ -32,6 +32,8 @@
           <a href = "https://youtu.be/gT6yuOvGs3c">Rowley Walkthrough</a>
         </div>
       </div>
+
+      <button onclick="resetMap()">Reset Map</button>
     </nav>
   </div>
    
@@ -40,7 +42,7 @@
     
       <div class= "box snell"><a href="./buildings/Snell/snell.html">
         <h3 class = "font">Bertrand H. Snell Hall</h3></a>
-        <span class = "tooltiptext">Bertrand H. Snell Hall is home to the David D.Reh School of Business, 
+        <span class = "tooltiptext" id ="snellSpan">Bertrand H. Snell Hall is home to the David D.Reh School of Business, 
           the Department of Communication, Media, and Design, the Department of Humanities and Social Studies,
           and our Engineering and Management program.
           This building also contains collaborative learning environments including a design lab, computer lab, an art studio,
@@ -49,7 +51,7 @@
       </div>
       <div class= "box sc"><a href="./buildings/science center/sc.html">
         <h3 class = "font"> Science Center</h3></a>
-        <span class = "tooltiptext">The Cora and Bayard Clarkson Science Center houses many
+        <span class = "tooltiptext" id ="scSpan">The Cora and Bayard Clarkson Science Center houses many
           departments including biology, biomolecular science, chemistry, computer science, data science,
           mathematics, physics, and psycology. The President's Office is also located in the Science Center
           in room 321 and can be contacted at president@clarkson.edu or (315)268-6444.
@@ -74,7 +76,7 @@
       </div>
       <div class = "box camp"><a href = "buildings/CAMP/CAMP.html">
         <h3 class = "font">CAMP</h3></a>
-        <span class = "tooltiptext"> The Center for Advanced Materials Processing is home to Clarkson's 
+        <span class = "tooltiptext" id = "campSpan"> The Center for Advanced Materials Processing is home to Clarkson's 
         Wallace H. Coulter School of Engineering which contains all of our enginnering programs.
         CAMP also is a research center in material proccesing, synthesis, functionalization, and characterization.
         In additon, Clarkson's 12 SPEED teams are also housed here, giving student the opportunity to work in collaborative 
@@ -83,19 +85,19 @@
       </div>
       <div class = "box rowley"><a href = "buildings/rowley/rowley.html">
         <h3 class = "font">Rowley Labs</h3></a>
-        <span class ="tooltiptext">Rowly Labs is connected to CAMP and houses many computer and research labs. Many professors offices in the enginnering department can be found in Rowley.</span>
+        <span class ="tooltiptext" id = "roSpan">Rowly Labs is connected to CAMP and houses many computer and research labs. Many professors offices in the enginnering department can be found in Rowley.</span>
         <img id = "rowleyPin" src = "map_uploads/Map_Pin.png" />
       </div>
       <div class = "box cheel">
          <h3 class = "font">Cheel Arena</h3>
-         <span class = "tooltiptext">Cheel Campus Center is the current home ice for Clarkson men's and women's Division 1 hockey teams, where students can get free admission to games.
+         <span class = "tooltiptext" id="cheelSpan">Cheel Campus Center is the current home ice for Clarkson men's and women's Division 1 hockey teams, where students can get free admission to games.
          Cheel also contanains Yianoukos Fitness Center which is a newly rennovated fitness center including a climbing wall.
          There is also a grab and go dining option available at the Disefano's Family Cafe housed in Cheel. </span>
          <img id = "cheelPin" src = "map_uploads/Map_Pin.png" />
         </div>
       <div class = "box quad">
         <h3 class = "font">Quad</h3>
-        <span class = "tooltiptext">The Quad is made up of the residence halls Cubley, Reynolds, Ross, and Brooks which each has four floors.
+        <span class = "tooltiptext" id="quadSpan">The Quad is made up of the residence halls Cubley, Reynolds, Ross, and Brooks which each has four floors.
         This dorming option is mainly for first year students and each room houses two students and about 24-50 students per floor.
         The center of the quad also houses the Ross-Brooks Cafe, also called RoBro, a buffet style dining hall.</span>
         <img id = "quadPin" src = "map_uploads/Map_Pin.png" />
@@ -112,7 +114,7 @@
       </div>
       <div class = "box price">
         <h3 class = "font">Price Hall</h3>
-        <span class = "tooltiptext">Price Hall is made of four wings: Farrisee, Thomas, Newell, and Ormsby. Each wing can house 60 mainly upperclass students in two bedroom suites housing four students.
+        <span class = "tooltiptext" id="priceSpan">Price Hall is made of four wings: Farrisee, Thomas, Newell, and Ormsby. Each wing can house 60 mainly upperclass students in two bedroom suites housing four students.
           Price Hall also contains the Clarkson School and the Honors Office which are housed in the Newell and Ormsby wings.</span>
           <img id = "pricePin" src = "map_uploads/Map_Pin.png" />
       </div>
@@ -159,8 +161,6 @@
       </div>
       <img src = "./map_uploads/mainview_map_no_labels.png" class = "center">
     </div>
-
-    <pre id="contents"></pre>
 
     <div class="searchPopup">
       <div class="formPopup" id="popupSearch">
