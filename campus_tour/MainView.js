@@ -1,3 +1,5 @@
+var roomName;
+
 function dispLocation(locations) {
     //building checks
     let snell = locations.includes("Bertrand");
@@ -211,17 +213,6 @@ function count(main_str, sub_str)
   return (main_str.match(new RegExp(subStr, 'gi')) || []).length;
 }
 
-function searchbar() {
-  //var x = document.getElementById('searchTXT').value
-  //document.get
-  document.getElementById("popupSearch").style.display = "block";
-  //window.alert(x)
-
-}
-function closeForm() {
-  document.getElementById("popupSearch").style.display = "none";
-}
-
 function resetMap()
 {
   //resets all the pins not not display
@@ -258,4 +249,126 @@ function resetMap()
   //quadSpan.innerText = Quad's origianl tooltip
   priceSpan.innerText = "Price Hall is made of four wings: Farrisee, Thomas, Newell, and Ormsby. Each wing can house 60 mainly upperclass students in two bedroom suites housing four students. Price Hall also contains the Clarkson School and the Honors Office which are housed in the Newell and Ormsby wings.";
 
+}
+
+function searchbar() {
+    roomName = document.getElementById('searchTXT').value;
+    document.getElementById("popupSearch").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("popupSearch").style.display = "none";
+}
+
+function goTo() {
+    var prefix = roomName.slice(0, 2); // extract the first two characters of the search value
+    var floor = roomName.slice(2, 3);
+    var realRoomName = roomName.substring(2);
+    var filename;
+    var saveto;
+    if (prefix === "CA") {
+        if (floor === '1') {
+            //filename = "../../CSV_files/CAMP_first_floor_table.csv";
+            filename = JSON.parse(localStorage.getItem('CAMP1_Array'));
+            saveto = 'CAMP1_Array';
+        } else if (floor === '2') {
+            //filename = "../../CSV_files/CAMP_second_floor_table.csv";
+            filename = JSON.parse(localStorage.getItem('CAMP2_Array'));
+            saveto = 'CAMP2_Array';
+        } else if (floor === '3') {
+            //filename = "../../CSV_files/CAMP_third_floor_table.csv";
+            filename = JSON.parse(localStorage.getItem('CAMP3_Array'));
+            saveto = 'CAMP3_Array'
+        } else {
+            return null;
+        }
+    } else if (prefix === "SC") {
+        if (floor === '1') {
+            //filename = "../../CSV_files/ScienceCenter_first_floor_table.csv";
+            filename = JSON.parse(localStorage.getItem('SC1_Array'));
+            saveto = 'SC1_Array';
+        } else if (floor === '2') {
+            filename = JSON.parse(localStorage.getItem('SC2_Array'));
+            saveto = 'SC2_Array';
+            //filename = "../../CSV_files/ScienceCenter_second_floor_table.csv";
+        } else if (floor === '3') {
+            filename = JSON.parse(localStorage.getItem('SC3_Array'));
+            saveto = 'SC3_Array';
+            //filename = "../../CSV_files/ScienceCenter_third_floor_table.csv";
+        } else {
+            return null;
+        }
+    } else if (prefix === "SN") {
+        if (floor === 'B') {
+            filename = JSON.parse(localStorage.getItem('SNB_Array'));
+            saveto = 'SNB_Array';
+            //filename = "../../CSV_files/Snell_zero_floor_table.csv";
+        } else if (floor === '1') {
+            filename = JSON.parse(localStorage.getItem('SN1_Array'));
+            saveto = 'SN1_Array';
+            //filename = "../../CSV_files/Snell_first_floor_table.csv";
+        } else if (floor === '2') {
+            filename = JSON.parse(localStorage.getItem('SN2_Array'));
+            saveto = 'SN2_Array';
+            //filename = "../../CSV_files/Snell_second_floor_table.csv";
+        } else if (floor === '3') {
+            filename = JSON.parse(localStorage.getItem('SN3_Array'));
+            saveto = 'SN3_Array';
+            //filename = "../../CSV_files/Snell_third_floor_table.csv";
+        } else {
+            return null;
+        }
+    } else if (prefix === "ST") {
+        if (floor === 'B') {
+            filename = JSON.parse(localStorage.getItem('STB_Array'));
+            saveto = 'STB_Array';
+            //filename = "../../CSV_files/StudentCenter_zero_floor_table.csv";
+        } else if (floor === '1') {
+            filename = JSON.parse(localStorage.getItem('ST1_Array'));
+            saveto = 'ST1_Array';
+            //filename = "../../CSV_files/StudentCenter_first_floor_table.csv";
+        } else if (floor === '2') {
+            filename = JSON.parse(localStorage.getItem('ST2_Array'));
+            saveto = 'ST2_Array';
+            //filename = "../../CSV_files/StudentCenter_second_floor_table.csv";
+        } else {
+            return null;
+        }
+    } else if (prefix === "ER") {
+        if (floor === '1') {
+            filename = JSON.parse(localStorage.getItem('ER1_Array'));
+            saveto = 'ER1_Array';
+            //filename = "../../CSV_files/ERC_first_floor_table.csv";
+        } else if (floor === '2') {
+            filename = JSON.parse(localStorage.getItem('ER2_Array'));
+            saveto = 'ER2_Array';
+            //filename = "../../CSV_files/ERC_second_floor_table.csv";
+        } else {
+            return null;
+        }
+    } else if (prefix === "RO") {
+        if (floor === '1') {
+            filename = JSON.parse(localStorage.getItem('RO1_Array'));
+            saveto = 'RO1_Array';
+            //filename = "../../CSV_files/Rowley_first_floor_table.csv";
+        } else if (floor === '2') {
+            filename = JSON.parse(localStorage.getItem('RO2_Array'));
+            saveto = 'RO2_Array';
+            //filename = "../../CSV_files/Rowley_second_floor_table.csv";
+        } else {
+            return null;
+        }
+    } else {
+        return null;
+    }
+
+    for (var i = 0; i < filename.length; i++) {
+        if (filename[i].RoomName === realRoomName) {
+            filename[i].Display = 'true';
+            console.log(filename)
+            localStorage.setItem(saveto, JSON.stringify(filename)); // Save the updated dataArray back to localStorage
+            window.location.href = window.location.href = filename[i].Path.replace(/"/g, '');
+        }
+    }
+    return null;
 }

@@ -164,10 +164,11 @@
 
     <div class="searchPopup">
       <div class="formPopup" id="popupSearch">
-          <form class="formContainer">
+          <form action="/action_page.php" class="formContainer">
               <h2>Search</h2>
+
               <button type="button" class="btn" onclick="goTo()" id="goToBtn">Go To</button>
-              <button type="submit" class="btn" onclick="directionsTo()" id="directionsToBtn">Directions To </button>
+              <button type="button" class="btn" onclick="inverse()">Directions To </button>
               <button type="button" onclick="closeForm()">Close</button>
           </form>
       </div>
