@@ -259,3 +259,64 @@ function resetMap()
   priceSpan.innerText = "Price Hall is made of four wings: Farrisee, Thomas, Newell, and Ormsby. Each wing can house 60 mainly upperclass students in two bedroom suites housing four students. Price Hall also contains the Clarkson School and the Honors Office which are housed in the Newell and Ormsby wings.";
 
 }
+
+function createSpline(parentElement) {
+  // Create a new SVG element
+  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+
+  // Set the width and height of the SVG element to 100%
+  svg.setAttribute("width", "100%");
+  svg.setAttribute("height", "100%");
+
+  // Create a path element
+  const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+
+  // Define the control points for the spline
+  const controlPoints = [
+    { x: 50, y: 50 },
+    { x: 150, y: 150 },
+    { x: 250, y: 50 },
+    { x: 350, y: 150 },
+    { x: 450, y: 50 },
+    { x: 550, y: 150 }
+  ];
+
+  // Generate the path data from the control points
+  let pathData = `M${controlPoints[0].x} ${controlPoints[0].y}`;
+
+  // Loop through the control points and add cubic Bezier curves
+  for (let i = 1; i < controlPoints.length - 2; i++) {
+    const curr = controlPoints[i];
+    const next = controlPoints[i + 1];
+    const x1 = curr.x + (next.x - controlPoints[i - 1].x) / 3;
+    const y1 = curr.y + (next.y - controlPoints[i - 1].y) / 3;
+    const x2 = next.x - (controlPoints[i + 2].x - curr.x) / 3;
+    const y2 = next.y - (controlPoints[i + 2].y - curr.y) / 3;
+
+    pathData += ` C${x1} ${y1}, ${x2} ${y2}, ${next.x} ${next.y}`;
+  }
+
+  // Set the d attribute of the path element
+  path.setAttribute("d", pathData);
+
+  // Set the stroke properties of the path element
+  path.setAttribute("stroke", "red");
+  path.setAttribute("stroke-width", "2");
+  path.setAttribute("fill", "none");
+
+  // Set the CSS property 'position' of the parent element to 'relative'
+  parentElement.style.position = "relative";
+
+  // Set the CSS property 'position' of the SVG element to 'absolute'
+  svg.style.position = "absolute";
+  svg.style.top = "0";
+  svg.style.left = "0";
+  svg.style.zIndex = "9999"; // Set a high z-index to ensure the SVG element is on top of other child elements of the parent element
+
+  // Append the path element to the SVG element
+  svg.appendChild(path);
+
+  // Append the SVG element to the parent element
+  parentElement.appendChild(svg);
+}
+
