@@ -242,9 +242,9 @@ function searchAndCreate3(element_ID) {
        dataArray[i].Display = 'false';
       }
   
-      localStorage.setItem('CAMP1_Array', JSON.stringify(dataArray)); // Save the updated dataArray back to localStorage
+      localStorage.setItem('CAMP2_Array', JSON.stringify(dataArray)); // Save the updated dataArray back to localStorage
     } else {
-      console.log('CAMP1_Array is null or undefined. Please load CSV data first.');
+      console.log('CAMP2_Array is null or undefined. Please load CSV data first.');
     }
   }
   function makefalse3() {
@@ -257,9 +257,9 @@ function searchAndCreate3(element_ID) {
        dataArray[i].Display = 'false';
       }
   
-      localStorage.setItem('CAMP1_Array', JSON.stringify(dataArray)); // Save the updated dataArray back to localStorage
+      localStorage.setItem('CAMP2_Array', JSON.stringify(dataArray)); // Save the updated dataArray back to localStorage
     } else {
-      console.log('CAMP1_Array is null or undefined. Please load CSV data first.');
+      console.log('CAMP2_Array is null or undefined. Please load CSV data first.');
     }
   }
 
