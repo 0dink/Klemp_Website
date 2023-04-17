@@ -4,8 +4,9 @@
     "\\campus_tour",
     "\\campus_tour\\buildings",
     "\\campus_tour\\buildings\\CAMP",
-    "\\campus_tour\\buildings\\StudentCenter"
+    "\\campus_tour\\buildings\\StudentCenter",
+    "\\campus_tour\\CSV_files"
   ],
-  "SelectedNode": "\\campus_tour\\buildings\\StudentCenter\\mysql-master",
+  "SelectedNode": "\\campus_tour\\buildings\\StudentCenter\\StudentCenter_one.html",
   "PreviewInSolutionExplorer": false
 }

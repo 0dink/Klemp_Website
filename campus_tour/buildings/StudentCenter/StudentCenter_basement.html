@@ -1,42 +1,45 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Student Center Basement</title>
-        <link rel="stylesheet" href="ST.css">
-        <script src="ST.js"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Center Basement</title>
+    <link rel="stylesheet" href="ST.css">
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0"></script>
+    <script src="../../CSV_files/ST_onload.js"></script>
+    <script src="ST.js"></script>
+</head>
 
-    <body>
-        <div class="row">
-            <div class="column_1">
-                <a href="StudentCenter.html"> <button class="Previous"> &laquo; Back</button> </a>
-                <a href="../../MainView.html"> <button class="Back_to_Main"> Main View</button></a>
-                <p>Floor Navigation</p>
-                <div class="column_3">
-                    <a href="StudentCenter_one.html"><i class="arrow up"></i></a>
-                </div>
-                <input type="text" id="searchTXT" placeholder="Search...">
-                <button onclick="searchbar()">Search</button>
+<body onload="searchAndCreate1(document.getElementById('parent'))">
+    <div class="row">
+        <div class="column_1">
+            <a href="StudentCenter.html"> <button class="Previous" onclick="makefalse1()"> &laquo; Back</button> </a>
+            <a href="../../MainView.html"><button class="Back_to_Main" onclick="makefalse1()">Main View</button></a>
+            <p>Floor Navigation </p>
+            <div class="column_3">
+                <a href="StudentCenter_one.html"><i class="arrow up"></i></a>
             </div>
+            <input type="text" id="searchTXT" placeholder="Search..">
+            <button onclick="searchbar()">Search</button>
+        </div>
 
-            <div class="column_2">
-                <div class="parent">
-                    <h1>Student Center Basement</h1>
-                    <img src="./StudentCenter_maps/StudentCenter_basement.jpg" class="center">
-                </div>
-                </div>
-                <div class="searchPopup">
-                    <div class="formPopup" id="popupSearch">
-                        <form action="/actionpage.php" class="formContainer">
-                            <h2>Search</h2>
-                            <button type="submit" class="btn">Go To</button>
-                            <button type="submit" class="btn">Directions To </button>
-                            <button type="button" onclick="closeForm()">Close</button>
-                        </form>
-                    </div>
-                </div>
+        <div class="column_2">
+            <h1>Student Center Basement</h1>
+            <div id="parent" class="parent">
+                <img src="./StudentCenter_maps/StudentCenter_basement.jpg" class="center">
             </div>
-    </body>
+        </div>
+        <div class="searchPopup">
+            <div class="formPopup" id="popupSearch">
+                <form action="/action_page.php" class="formContainer">
+                    <h2>Search</h2>
+
+                    <button type="button" class="btn" onclick="goTo()" id="goToBtn">Go To</button>
+                    <button type="button" class="btn" onclick="inverse()">Directions To </button>
+                    <button type="button" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+        </div>
+</body>
 </html>
+
