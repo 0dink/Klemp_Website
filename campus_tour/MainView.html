@@ -12,7 +12,7 @@
 
   <body>
 
-  <div id=>
+  <div>
     <nav>
       <input type="text" id="searchTXT" placeholder="Search..">
         <button onclick="searchbar()">Search</button>
@@ -163,11 +163,11 @@
     
     <div class="searchPopup">
       <div class="formPopup" id="popupSearch">
-          <form action="/action_page.php" class="formContainer">
+          <form class="formContainer">
               <h2>Search</h2>
 
               <button type="button" class="btn" onclick="goTo()" id="goToBtn">Go To</button>
-              <button type="button" class="btn" onclick="inverse()">Directions To </button>
+              <button type="button" class="btn" onclick="directionsTo()" id="directionsToBtn">Directions To </button>
               <button type="button" onclick="closeForm()">Close</button>
           </form>
       </div>
