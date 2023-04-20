@@ -121,6 +121,46 @@ function goTo(){
 function closeForm() {
     document.getElementById("popupSearch").style.display = "none";
 }
+let count = 0; // Variable to keep track of the count
+/*
+function createHTMLElementAtCoordinatePair(xPercent, yPercent, parentElement) {
+  const element = document.createElement('div');
+  element.style.position = 'absolute';
+
+  element.style.width = `${2}px`;
+  element.style.height = `${2}px`;
+  element.style.backgroundColor = 'red';
+  element.style.color = 'red'; // Set the text color to red
+  element.innerText = count++; // Set the element's inner text to the current count and increment it
+  parentElement.appendChild(element);
+  
+  // Get the current dimensions of the parent element
+  const parentWidth = parentElement.offsetWidth;
+  const parentHeight = parentElement.offsetHeight;
+
+  // Calculate the fixed pixel values for the element's position based on the percentages
+  const xPixel = Math.round((xPercent / 100) * parentWidth) - (element.offsetWidth / 2);
+  const yPixel = Math.round((yPercent / 100) * parentHeight) - (element.offsetHeight / 2);
+
+  // Set the fixed pixel values for the element's position
+  element.style.left = `${xPixel}px`;
+  element.style.top = `${yPixel}px`;
+
+  // Add an event listener to adjust the element's position when the parent element is resized
+  window.addEventListener('resize', () => {
+    const newParentWidth = parentElement.offsetWidth;
+    const newParentHeight = parentElement.offsetHeight;
+
+    // Recalculate the fixed pixel values for the element's position based on the new dimensions
+    const newXPixel = Math.round((xPercent / 100) * newParentWidth) - (element.offsetWidth / 2);
+    const newYPixel = Math.round((yPercent / 100) * newParentHeight) - (element.offsetHeight / 2);
+
+    // Set the new fixed pixel values for the element's position
+    element.style.left = `${newXPixel}px`;
+    element.style.top = `${newYPixel}px`;
+  });
+}
+*/
 
 function createHTMLElementAtCoordinatePair(xPercent, yPercent, parentElement) {
   const element = document.createElement('div');
@@ -157,6 +197,7 @@ function createHTMLElementAtCoordinatePair(xPercent, yPercent, parentElement) {
     element.style.top = `${newYPixel}px`;
   });
 }
+
 function searchAndCreate1(element_ID) {
     // Retrieve the array from localStorage
     var dataArray = JSON.parse(localStorage.getItem('CAMP1_Array'));
