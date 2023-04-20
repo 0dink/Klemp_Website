@@ -6,6 +6,7 @@ function searchbar() {
 }
 
 function goTo(){
+  //goto function
   var prefix = roomName.slice(0, 2); // extract the first two characters of the search value
   var floor = roomName.slice(2, 3);
   var realRoomName = roomName.substring(2);
@@ -106,7 +107,7 @@ function goTo(){
     }
 } else {
     return null;
-}
+} 
 
 for (var i = 0; i < filename.length; i++){
     if (filename[i].RoomName === realRoomName) {
