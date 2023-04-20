@@ -19,9 +19,7 @@ function RO1_CSV_to_Array() {
         
         localStorage.setItem('RO1_Array', JSON.stringify(dataArray));// Store the array in localStorage
 
-        console.log('rowley1 First element:', dataArray[1]);
-        //console.log('First element:', dataArray[2]);
-        //console.log('First element:', dataArray[3]);
+        console.log('RO1 First element:', dataArray[1]);
       }
     };
     
@@ -52,9 +50,8 @@ function RO1_CSV_to_Array() {
         
         localStorage.setItem('RO2_Array', JSON.stringify(dataArray));// Store the array in localStorage
 
-        console.log('rowley 2 First element:', dataArray[1]);
-        //console.log('First element:', dataArray[2]);
-        //console.log('First element:', dataArray[3]);
+        console.log('RO2 First element:', dataArray[1]);
+
       }
     };
     

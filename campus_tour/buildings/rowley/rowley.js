@@ -203,3 +203,75 @@ async function openCSV2(elementID) {
     createHTMLElementAtCoordinatePair(x, y, elementID)
   });
 }
+
+function searchAndCreate1(element_ID) {
+  // Retrieve the array from localStorage
+  var dataArray = JSON.parse(localStorage.getItem('RO1_Array'));
+  console.log(dataArray[1])
+  // Check if dataArray is not null or undefined
+  if (dataArray) {
+    // Loop through the array and call createHTMLElementAtCoordinatePair for elements with Display set to true
+    for (var i = 0; i < dataArray.length; i++) {
+      var displayValue = dataArray[i].Display.trim().toLowerCase(); // Convert to lowercase and remove leading/trailing spaces
+      if (displayValue === 'true' || displayValue === 'true\r') {
+          var x = parseInt(dataArray[i].XCoord);
+          var y = parseInt(dataArray[i].YCoord);
+          console.log(dataArray[i].RoomName)
+        createHTMLElementAtCoordinatePair(x, y,element_ID);
+      }
+    }
+  } else {
+    console.log('myDataArray is null or undefined. Please load CSV data first.');
+  }
+}
+function searchAndCreate2(element_ID) {
+  // Retrieve the array from localStorage
+  var dataArray = JSON.parse(localStorage.getItem('RO2_Array'));
+  console.log(dataArray[1])
+  // Check if dataArray is not null or undefined
+  if (dataArray) {
+    // Loop through the array and call createHTMLElementAtCoordinatePair for elements with Display set to true
+    for (var i = 0; i < dataArray.length; i++) {
+      var displayValue = dataArray[i].Display.trim().toLowerCase(); // Convert to lowercase and remove leading/trailing spaces
+      if (displayValue === 'true' || displayValue === 'true\r') {
+          var x = parseInt(dataArray[i].XCoord);
+          var y = parseInt(dataArray[i].YCoord);
+          console.log(dataArray[i].RoomName)
+        createHTMLElementAtCoordinatePair(x, y,element_ID);
+      }
+    }
+  } else {
+    console.log('myDataArray is null or undefined. Please load CSV data first.');
+  }
+}
+
+function makefalse1() {
+
+  var dataArray = JSON.parse(localStorage.getItem('RO1_Array'));// Retrieve the array from localStorage
+  
+  if (dataArray) { // Check if dataArray is not null or undefined
+
+    for (var i = 0; i < dataArray.length; i++) {// Loop through the array and set the Display property to true
+     dataArray[i].Display = 'false';
+    }
+
+    localStorage.setItem('RO1_Array', JSON.stringify(dataArray)); // Save the updated dataArray back to localStorage
+  } else {
+    console.log('RO1_Array is null or undefined. Please load CSV data first.');
+  }
+}
+function makefalse2() {
+
+  var dataArray = JSON.parse(localStorage.getItem('RO2_Array'));// Retrieve the array from localStorage
+  
+  if (dataArray) { // Check if dataArray is not null or undefined
+
+    for (var i = 0; i < dataArray.length; i++) {// Loop through the array and set the Display property to true
+     dataArray[i].Display = 'false';
+    }
+
+    localStorage.setItem('RO2_Array', JSON.stringify(dataArray)); // Save the updated dataArray back to localStorage
+  } else {
+    console.log('RO2_Array is null or undefined. Please load CSV data first.');
+  }
+}
