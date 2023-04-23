@@ -162,12 +162,14 @@ function createHTMLElementAtCoordinatePair(xPercent, yPercent, parentElement) {
 
 function searchAndCreate1(element_ID) {
     // Retrieve the array from localStorage
+    console.log("search and create ran")
     var dataArray = JSON.parse(localStorage.getItem('RO1_Array'));
     console.log(dataArray[1])
     // Check if dataArray is not null or undefined
     if (dataArray) {
       // Loop through the array and call createHTMLElementAtCoordinatePair for elements with Display set to true
       for (var i = 0; i < dataArray.length; i++) {
+        //console.log(i)
         var displayValue = dataArray[i].Display.trim().toLowerCase(); // Convert to lowercase and remove leading/trailing spaces
         if (displayValue === 'true' || displayValue === 'true\r') {
             var x = parseInt(dataArray[i].XCoord);

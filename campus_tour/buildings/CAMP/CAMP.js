@@ -121,8 +121,9 @@ function goTo(){
 function closeForm() {
     document.getElementById("popupSearch").style.display = "none";
 }
-let count = 0; // Variable to keep track of the count
 /*
+let count = 0; // Variable to keep track of the count
+
 function createHTMLElementAtCoordinatePair(xPercent, yPercent, parentElement) {
   const element = document.createElement('div');
   element.style.position = 'absolute';

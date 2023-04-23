@@ -1,5 +1,5 @@
 RoomName,XCoord,YCoord,Path,Display
-148,23.6816,7.0312,"""https://webspace.clarkson.edu/projects/KLEMP/public_html/Klemp_Website-main/campus_tour/buildings/rowley/rowley_one.html""",False
+148,23.6816,7.0312,"""http://127.0.0.1:5501/campus_tour/buildings/rowley/rowley_one.html""",False
 140A,73.8281,7.373,"""https://webspace.clarkson.edu/projects/KLEMP/public_html/Klemp_Website-main/campus_tour/buildings/rowley/rowley_one.html""",False
 S3-100,6.3965,8.7402,"""https://webspace.clarkson.edu/projects/KLEMP/public_html/Klemp_Website-main/campus_tour/buildings/rowley/rowley_one.html""",False
 140B,94.6289,8.2031,"""https://webspace.clarkson.edu/projects/KLEMP/public_html/Klemp_Website-main/campus_tour/buildings/rowley/rowley_one.html""",False
