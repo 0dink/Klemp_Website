@@ -262,27 +262,16 @@ function createSpline(parentElement) {
   // Create a path element
   const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
 
-  // Define the control points for the spline
-  const controlPoints = [
-    { x: 520, y: 62 },
-    { x: 150, y: 150 },
-    { x: 150, y: 150 },
-    { x: 150, y: 150 }
-  ];
+  // Define the control points for the polyline
+  const controlPoints = [{ x: 580, y: 540 },{ x: 670, y: 425},{ x: 750, y: 475},{ x: 740, y: 510}];
 
   // Generate the path data from the control points
   let pathData = `M${controlPoints[0].x} ${controlPoints[0].y}`;
 
-  // Loop through the control points and add cubic Bezier curves
-  for (let i = 1; i < controlPoints.length - 2; i++) {
-    const curr = controlPoints[i];
-    const next = controlPoints[i + 1];
-    const x1 = curr.x + (next.x - controlPoints[i - 1].x) / 3;
-    const y1 = curr.y + (next.y - controlPoints[i - 1].y) / 3;
-    const x2 = next.x - (controlPoints[i + 2].x - curr.x) / 3;
-    const y2 = next.y - (controlPoints[i + 2].y - curr.y) / 3;
-
-    pathData += ` C${x1} ${y1}, ${x2} ${y2}, ${next.x} ${next.y}`;
+  // Loop through the control points and add straight lines
+  for (let i = 1; i < controlPoints.length; i++) {
+    const point = controlPoints[i];
+    pathData += ` L${point.x} ${point.y}`;
   }
 
   // Set the d attribute of the path element
@@ -308,7 +297,6 @@ function createSpline(parentElement) {
   // Append the SVG element to the parent element
   parentElement.appendChild(svg);
 }
-
 
 function searchbar() {
   roomName = document.getElementById('searchTXT').value;
