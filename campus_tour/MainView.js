@@ -251,7 +251,7 @@ function resetMap()
 
 }
 
-function createSpline(parentElement) {
+function createSpline(parentElement,controls) {
   // Create a new SVG element
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
 
@@ -263,7 +263,7 @@ function createSpline(parentElement) {
   const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
 
   // Define the control points for the polyline
-  const controlPoints = [{ x: 580, y: 540 },{ x: 670, y: 425},{ x: 750, y: 475},{ x: 740, y: 510}];
+  const controlPoints = controls;
 
   // Generate the path data from the control points
   let pathData = `M${controlPoints[0].x} ${controlPoints[0].y}`;
@@ -296,6 +296,25 @@ function createSpline(parentElement) {
 
   // Append the SVG element to the parent element
   parentElement.appendChild(svg);
+}
+
+function searchAndCreateDirections(element_ID) {
+  // Retrieve the array from localStorage
+  var dataArray = JSON.parse(localStorage.getItem('Directions_Array'));
+  console.log(dataArray[1])
+  // Check if dataArray is not null or undefined
+  if (dataArray) {
+    // Loop through the array and call createHTMLElementAtCoordinatePair for elements with Display set to true
+    for (var i = 0; i < dataArray.length; i++) {
+      var displayValue = dataArray[i].Display.trim().toLowerCase(); // Convert to lowercase and remove leading/trailing spaces
+      if (displayValue === 'true' || displayValue === 'true\r') {
+          coords = dataArray[i].ControlPoints;
+          createSpline(document.getElementById('map3'),coords);
+      }
+    }
+  } else {
+    console.log('myDataArray is null or undefined. Please load CSV data first.');
+  }
 }
 
 function searchbar() {
