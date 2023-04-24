@@ -1,5 +1,5 @@
 ControlPoints	BuildingName1	BuildingName2	Display
-"[{ x: 520, y: 623 },{ x: 566, y: 560 }]"	CAMP	ERC	FALSE
+"[{ x: 520, y: 623 },{ x: 566, y: 560 }]"	CAMP	ERC	TRUE
 "[{ x: 520, y: 623 },{ x: 580, y: 540 },{ x: 710, y: 635 }]"	CAMP	SC	FALSE
 "[{ x: 520, y: 623 },{ x: 580, y: 540 }]"	CAMP	ST	FALSE
 "[{ x: 520, y: 623 },{ x: 670, y: 425},{ x: 750, y: 475},{ x: 740, y: 510}]"	CAMP	SNELL	FALSE
