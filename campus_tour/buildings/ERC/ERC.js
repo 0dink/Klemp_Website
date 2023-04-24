@@ -117,13 +117,11 @@ function goTo(){
     } 
     return null;
   }
-  
-
-
 
 function closeForm() {
     document.getElementById("popupSearch").style.display = "none";
 }
+
 function createHTMLElementAtCoordinatePair(xPercent, yPercent, parentElement) {
   const element = document.createElement('div');
   element.style.position = 'absolute';
@@ -166,6 +164,7 @@ function createHTMLElementAtCoordinatePair(xPercent, yPercent, parentElement) {
     element.style.top = `${newYPixel}px`;
   });
 }
+
 function searchAndCreate1(element_ID) {
     // Retrieve the array from localStorage
     var dataArray = JSON.parse(localStorage.getItem('ER1_Array'));
