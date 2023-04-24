@@ -6,6 +6,8 @@
     <title>KLEMP Virtual Campus</title>
     <link href="MainView.css" rel="stylesheet">
     <script src="MainView.js"></script>
+    <script src="/CSV_files/directions_onload.js"></script>
+
   </head>
 
   </style>
@@ -18,7 +20,7 @@
         <button onclick="searchbar()">Search</button>
         
       <button onclick="openFile(dispFile)">Upload Schedule</button>
-    
+      <button onclick="createSpline(document.getElementById('map3'))">Spline</button>
       <div class="dropdown">
         <button class = "dropbtn">360 Videos of Campus</button>
         <div class="dropdown-content">
@@ -36,7 +38,7 @@
       <button onclick="resetMap()">Reset Map</button>
     </nav>
   </div>
-    <div class = "parent">
+    <div class = "parent" id = "map3">
     
     
       <div class= "box snell"><a href="./buildings/Snell/snell.html">
@@ -172,6 +174,5 @@
           </form>
       </div>
   </div>
-
   </body>
 </html>

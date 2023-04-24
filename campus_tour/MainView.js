@@ -264,12 +264,10 @@ function createSpline(parentElement) {
 
   // Define the control points for the spline
   const controlPoints = [
-    { x: 50, y: 50 },
+    { x: 520, y: 62 },
     { x: 150, y: 150 },
-    { x: 250, y: 50 },
-    { x: 350, y: 150 },
-    { x: 450, y: 50 },
-    { x: 550, y: 150 }
+    { x: 150, y: 150 },
+    { x: 150, y: 150 }
   ];
 
   // Generate the path data from the control points

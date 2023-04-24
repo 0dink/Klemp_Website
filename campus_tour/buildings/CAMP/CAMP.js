@@ -262,14 +262,3 @@ function searchAndCreate3(element_ID) {
       console.log('CAMP2_Array is null or undefined. Please load CSV data first.');
     }
   }
-
-
-
-
-
-
-
-
-
-
-
