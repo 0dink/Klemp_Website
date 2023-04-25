@@ -251,52 +251,56 @@ function resetMap()
 
 }
 
-function createSpline(parentElement,controls) {
+function createSpline(parentElement, controls) {
   // Create a new SVG element
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-
+  
   // Set the width and height of the SVG element to 100%
   svg.setAttribute("width", "100%");
   svg.setAttribute("height", "100%");
-
+  
   // Create a path element
   const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-
-  // Define the control points for the polyline
-  const controlPoints = controls;
-
+  
+  // Convert the controls string into an array of objects
+  const controlObjects = JSON.parse(controls);
+  
+  // Extract the x and y coordinates from each object to create an array of control points
+  const controlPointsArray = controlObjects.map(({x, y}) => ({x, y}));
+  
   // Generate the path data from the control points
-  let pathData = `M${controlPoints[0].x} ${controlPoints[0].y}`;
-
+  let pathData = `M${controlPointsArray[0].x} ${controlPointsArray[0].y}`;
+  
   // Loop through the control points and add straight lines
-  for (let i = 1; i < controlPoints.length; i++) {
-    const point = controlPoints[i];
+  for (let i = 1; i < controlPointsArray.length; i++) {
+    const point = controlPointsArray[i];
     pathData += ` L${point.x} ${point.y}`;
   }
-
+  
   // Set the d attribute of the path element
-  path.setAttribute("d", pathData);
-
+  path.setAttribute("d", `${pathData}`);
+  
   // Set the stroke properties of the path element
   path.setAttribute("stroke", "red");
   path.setAttribute("stroke-width", "2");
   path.setAttribute("fill", "none");
-
+  
   // Set the CSS property 'position' of the parent element to 'relative'
   parentElement.style.position = "relative";
-
+  
   // Set the CSS property 'position' of the SVG element to 'absolute'
   svg.style.position = "absolute";
   svg.style.top = "0";
   svg.style.left = "0";
   svg.style.zIndex = "9999"; // Set a high z-index to ensure the SVG element is on top of other child elements of the parent element
-
+  
   // Append the path element to the SVG element
   svg.appendChild(path);
-
+  
   // Append the SVG element to the parent element
   parentElement.appendChild(svg);
 }
+
 
 function searchAndCreateDirections() {
   // Retrieve the array from localStorage
@@ -306,7 +310,7 @@ function searchAndCreateDirections() {
   if (dataArray) {
     // Loop through the array and call createHTMLElementAtCoordinatePair for elements with Display set to true
     for (var i = 0; i < dataArray.length; i++) {
-      var displayValue = dataArray[i].Display.trim().toLowerCase(); // Convert to lowercase and remove leading/trailing spaces
+      var displayValue = dataArray[i].Display; // Convert to lowercase and remove leading/trailing spaces
       if (displayValue === 'true' || displayValue === 'true\r') {
           coords = dataArray[i].ControlPoints;
           createSpline(document.getElementById('map3'),coords);

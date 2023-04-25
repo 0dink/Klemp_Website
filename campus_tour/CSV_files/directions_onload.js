@@ -6,7 +6,7 @@ function Directions_CSV_to_Array() {
         var lines = xhr.responseText.split('\n');// Parse the CSV data
         var dataArray = [];
         for (var i = 0; i < lines.length; i++) {
-          var values = lines[i].split(',');
+          var values = lines[i].split('|');
           var obj = {
             ControlPoints: values[0],
             BuildingName1: values[1],
