@@ -298,7 +298,7 @@ function createSpline(parentElement,controls) {
   parentElement.appendChild(svg);
 }
 
-function searchAndCreateDirections(element_ID) {
+function searchAndCreateDirections() {
   // Retrieve the array from localStorage
   var dataArray = JSON.parse(localStorage.getItem('Directions_Array'));
   console.log(dataArray[1])
