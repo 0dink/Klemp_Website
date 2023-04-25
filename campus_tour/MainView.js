@@ -251,22 +251,20 @@ function resetMap()
 
 }
 
-function createSpline(parentElement, controls) {
-  console.log(parentElement, controls);
+function createSpline(controls) {
   // Create a new SVG element
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-  
+  parentElement = document.getElementById('map3')
   // Set the width and height of the SVG element to 100%
   svg.setAttribute("width", "100%");
   svg.setAttribute("height", "100%");
   
   // Create a path element
   const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-  controls = "[{ \"x\": 520, \"y\": 623 },{ \"x\": 566, \"y\": 560 }]";
   // Convert the controls string into an array of objects
   console.log(controls);
   const controlObjects = JSON.parse(controls);
-  
+  console.log(controlObjects);
   // Extract the x and y coordinates from each object to create an array of control points
   const controlPointsArray = controlObjects.map(({x, y}) => ({x, y}));
   
@@ -314,10 +312,10 @@ function searchAndCreateDirections() {
     // Loop through the array and call createHTMLElementAtCoordinatePair for elements with Display set to true
     for (var i = 0; i < dataArray.length; i++) {
       var displayValue = dataArray[i].Display; // Convert to lowercase and remove leading/trailing spaces
-      if (displayValue === '\t\"TRUE\"\r' || displayValue === 'TRUE\r') {
+      if (displayValue === '\t\"TRUE\"\r' || displayValue === '\t\"TRUE\"') {
           coords = dataArray[i].ControlPoints;
           console.log(coords);
-          createSpline(document.getElementById('map3'),coords);
+          createSpline(coords);
       }
     }
   } else {
