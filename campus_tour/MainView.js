@@ -252,6 +252,7 @@ function resetMap()
 }
 
 function createSpline(parentElement, controls) {
+  console.log(parentElement, controls);
   // Create a new SVG element
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   
@@ -262,6 +263,8 @@ function createSpline(parentElement, controls) {
   // Create a path element
   const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
   
+  // Convert the controls string into an array of objects
+  const controlObjects = JSON.parse(controls);
   
   // Extract the x and y coordinates from each object to create an array of control points
   const controlPointsArray = controlObjects.map(({x, y}) => ({x, y}));
@@ -303,14 +306,16 @@ function createSpline(parentElement, controls) {
 function searchAndCreateDirections() {
   // Retrieve the array from localStorage
   var dataArray = JSON.parse(localStorage.getItem('Directions_Array'));
+  console.log(dataArray);
   console.log(dataArray[1])
   // Check if dataArray is not null or undefined
   if (dataArray) {
     // Loop through the array and call createHTMLElementAtCoordinatePair for elements with Display set to true
     for (var i = 0; i < dataArray.length; i++) {
       var displayValue = dataArray[i].Display; // Convert to lowercase and remove leading/trailing spaces
-      if (displayValue === 'true' || displayValue === 'true\r') {
+      if (displayValue === '\t\"TRUE\"\r' || displayValue === 'TRUE\r') {
           coords = dataArray[i].ControlPoints;
+          console.log(coords);
           createSpline(document.getElementById('map3'),coords);
       }
     }
