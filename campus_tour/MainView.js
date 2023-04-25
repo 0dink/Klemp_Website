@@ -262,8 +262,6 @@ function createSpline(parentElement, controls) {
   // Create a path element
   const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
   
-  // Convert the controls string into an array of objects
-  const controlObjects = JSON.parse(controls);
   
   // Extract the x and y coordinates from each object to create an array of control points
   const controlPointsArray = controlObjects.map(({x, y}) => ({x, y}));
