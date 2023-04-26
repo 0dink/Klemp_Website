@@ -17,7 +17,7 @@ function SnellB_CSV_to_Array() {
                 dataArray.push(obj);
             }
 
-            localStorage.setItem('SnellB_Array', JSON.stringify(dataArray));// Store the array in localStorage
+            localStorage.setItem('SNB_Array', JSON.stringify(dataArray));// Store the array in localStorage
 
             console.log('SnellB First element:', dataArray[1]);
         }
@@ -47,7 +47,7 @@ function Snell1_CSV_to_Array() {
                 dataArray.push(obj);
             }
 
-            localStorage.setItem('Snell1_Array', JSON.stringify(dataArray));// Store the array in localStorage
+            localStorage.setItem('SN1_Array', JSON.stringify(dataArray));// Store the array in localStorage
 
             console.log('Snell1 First element:', dataArray[1]);
         }
@@ -77,7 +77,7 @@ function Snell2_CSV_to_Array() {
                 dataArray.push(obj);
             }
 
-            localStorage.setItem('Snell2_Array', JSON.stringify(dataArray));// Store the array in localStorage
+            localStorage.setItem('SN2_Array', JSON.stringify(dataArray));// Store the array in localStorage
 
             console.log('Snell2 First element:', dataArray[1]);
         }
@@ -107,7 +107,7 @@ function Snell3_CSV_to_Array() {
                 dataArray.push(obj);
             }
 
-            localStorage.setItem('Snell3_Array', JSON.stringify(dataArray));// Store the array in localStorage
+            localStorage.setItem('SN3_Array', JSON.stringify(dataArray));// Store the array in localStorage
 
             console.log('Snell3 First element:', dataArray[1]);
         }
