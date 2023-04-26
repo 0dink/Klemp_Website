@@ -1,5 +1,5 @@
 RoomName,XCoord,YCoord,Path,Display
-113,29.3945,9.0332,"""https://webspace.clarkson.edu/projects/KLEMP/public_html/Klemp_Website-main/campus_tour/buildings/StudentCenter/StudentCenter_one.html""",False
+113,29.3945,9.0332,"""http://127.0.0.1:5501/campus_tour/buildings/StudentCenter/StudentCenter_one.html""",False
 113A,35.498,12.3047,"""https://webspace.clarkson.edu/projects/KLEMP/public_html/Klemp_Website-main/campus_tour/buildings/StudentCenter/StudentCenter_one.html""",False
 113B,34.0332,14.209,"""https://webspace.clarkson.edu/projects/KLEMP/public_html/Klemp_Website-main/campus_tour/buildings/StudentCenter/StudentCenter_one.html""",False
 100B,36.4258,16.2109,"""https://webspace.clarkson.edu/projects/KLEMP/public_html/Klemp_Website-main/campus_tour/buildings/StudentCenter/StudentCenter_one.html""",False
