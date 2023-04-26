@@ -17,7 +17,7 @@ function ScienceCenter1_CSV_to_Array() {
           dataArray.push(obj);
         }
         
-        localStorage.setItem('CAMP1_Array', JSON.stringify(dataArray));// Store the array in localStorage
+        localStorage.setItem('SC1_Array', JSON.stringify(dataArray));// Store the array in localStorage
 
         console.log('ScienceCenter1 First element:', dataArray[1]);
       }
@@ -47,7 +47,7 @@ function ScienceCenter1_CSV_to_Array() {
           dataArray.push(obj);
         }
         
-        localStorage.setItem('ScienceCenter2_Array', JSON.stringify(dataArray));// Store the array in localStorage
+        localStorage.setItem('SC2_Array', JSON.stringify(dataArray));// Store the array in localStorage
 
         console.log('ScienceCenter2 First element:', dataArray[1]);
       }
@@ -77,7 +77,7 @@ function ScienceCenter1_CSV_to_Array() {
           dataArray.push(obj);
         }
         
-        localStorage.setItem('ScienceCenter3_Array', JSON.stringify(dataArray));// Store the array in localStorage
+        localStorage.setItem('SC3_Array', JSON.stringify(dataArray));// Store the array in localStorage
 
         console.log('ScienceCenter3 First element:', dataArray[1]);
       }

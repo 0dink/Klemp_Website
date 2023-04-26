@@ -28,6 +28,7 @@ function goTo(){
           return null;
       }
   } else if (prefix === "SC") {
+      console.log("sc condition met")
       if (floor === '1') {
           //filename = "../../CSV_files/ScienceCenter_first_floor_table.csv";
           filename = JSON.parse(localStorage.getItem('SC1_Array'));
@@ -37,8 +38,10 @@ function goTo(){
           saveto = 'SC2_Array';
           //filename = "../../CSV_files/ScienceCenter_second_floor_table.csv";
       } else if (floor === '3') {
+          console.log("second condition met")
           filename = JSON.parse(localStorage.getItem('SC3_Array'));
           saveto = 'SC3_Array';
+          console.log("got to here")
           //filename = "../../CSV_files/ScienceCenter_third_floor_table.csv";
       } else {
           return null;
@@ -106,7 +109,7 @@ function goTo(){
   } else {
       return null;
   }
-
+  console.log(typeof filename)
   for (var i = 0; i < filename.length; i++){
     if (filename[i].RoomName === realRoomName) {
         filename[i].Display = 'true';
