@@ -1,63 +1,94 @@
-*{
-    box-sizing: border-box;
+h1{
+    text-align: center;
 }
-
-.column{
-    float: left;
-    width: 50%
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
-
-.row::after{
-    content:"";
-    clear: both;
-    display: table;
-}
-
 .Previous{
     font-size: 20px;
     background-color:#f1f1f1;
     color: black;
 }
-
-.center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
 .Back_to_Main{
     font-size: 24px;
 }
-
 .arrow{
     border: solid black;
-    border-width:0 3px 3px 0;
+    border-width:0 8px 8px 0;
+    width: 15px;
+    height: 15px;
     display:inline-block;
     padding: 3px;
 }
-
-.down{
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-}
-
-h1{
-    text-align: center;
-}
-
 .up{
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
 }
-
+.down{
+    transform: (45deg);
+    -webkit-transform: rotate(45deg);
+}
+.row::after{
+    content:"";
+    clear: both;
+    display: table;
+}
+.column{
+    float: left;
+    width: 32%;
+    padding: 5px;
+}
 .column_1{
     float: left;
     width: 10%;
-    padding: 5px;
 }
 .column_2{
     float: left;
     width: 85%;
-    padding: 5px;
 }
+.column_3{
+    float: left;
+    width: 15%;
+    padding: 10px;
+}
+.searchPopup {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.formPopup {
+    display: none;
+    position: fixed;
+    left: 7%;
+    top: 35%;
+    transform: translate(-50%, 5%);
+    border: 5px solid #999999;
+    z-index: 9;
+}
+.formContainer {
+    max-width: 300px;
+    padding: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #fff;
+}
+.parent {
+    position: relative;
+  }
+.parent .box{
+    position: absolute;
+    width: calc(1.6vw + 10px); 
+    height: calc(1.6vw + 10px);
+    background-color: rgba(238, 75, 43, 1);
+    display: -webkit-box;
+    height: 5px;
+    width: 5px;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
