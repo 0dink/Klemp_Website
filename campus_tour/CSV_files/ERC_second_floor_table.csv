@@ -1,7 +1,7 @@
 RoomName,XCoord,YCoord,Path,Display
 2306,48.1445,9.6191,"""https://webspace.clarkson.edu/projects/KLEMP/public_html/Klemp_Website-main/campus_tour/buildings/ERC/ERC_two.html""",False
-2307,51.5137,11.7188,"""https://webspace.clarkson.edu/projects/KLEMP/public_html/Klemp_Website-main/campus_tour/buildings/ERC/ERC_two.html""",False
-2305,44.8242,15.332,"""https://webspace.clarkson.edu/projects/KLEMP/public_html/Klemp_Website-main/campus_tour/buildings/ERC/ERC_two.html""",False
+2307,51.5137,11.7188,"""http://127.0.0.1:5501/campus_tour/buildings/ERC/ERC_two.html""",False
+2305,44.8242,15.332,"""http://127.0.0.1:5501/campus_tour/buildings/ERC/ERC_two.html""",False
 2308,54.1992,16.1133,"""https://webspace.clarkson.edu/projects/KLEMP/public_html/Klemp_Website-main/campus_tour/buildings/ERC/ERC_two.html""",False
 FRF2,38.4277,17.334,"""https://webspace.clarkson.edu/projects/KLEMP/public_html/Klemp_Website-main/campus_tour/buildings/ERC/ERC_two.html""",False
 2304,42.9199,19.7266,"""https://webspace.clarkson.edu/projects/KLEMP/public_html/Klemp_Website-main/campus_tour/buildings/ERC/ERC_two.html""",False

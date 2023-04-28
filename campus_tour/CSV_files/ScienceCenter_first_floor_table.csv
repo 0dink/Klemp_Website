@@ -1,5 +1,5 @@
 RoomName,XCoord,YCoord,Path,Display
-162,32.0312,11.4746,"""https://webspace.clarkson.edu/projects/KLEMP/public_html/Klemp_Website-main/campus_tour/buildings/ScienceCenter/ScienceCenter_one.html""",FALSE
+162,32.0312,11.4746,"""http://127.0.0.1:5501/campus_tour/buildings/ScienceCenter/ScienceCenter_one.html""",FALSE
 S7-100,42.4316,11.1816,"""https://webspace.clarkson.edu/projects/KLEMP/public_html/Klemp_Website-main/campus_tour/buildings/ScienceCenter/ScienceCenter_one.html""",FALSE
 F1110,45.166,14.6973,"""https://webspace.clarkson.edu/projects/KLEMP/public_html/Klemp_Website-main/campus_tour/buildings/ScienceCenter/ScienceCenter_one.html""",FALSE
 C1100A,37.0605,17.7734,"""https://webspace.clarkson.edu/projects/KLEMP/public_html/Klemp_Website-main/campus_tour/buildings/ScienceCenter/ScienceCenter_one.html""",FALSE
