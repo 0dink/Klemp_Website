@@ -47,7 +47,7 @@ function goTo(){
           return null;
       }
   } else if (prefix === "SN") {
-      if (floor === 'B') {
+      if (floor === '0') {
           filename = JSON.parse(localStorage.getItem('SNB_Array'));
           saveto = 'SNB_Array';
           //filename = "../../CSV_files/Snell_zero_floor_table.csv";
@@ -67,7 +67,7 @@ function goTo(){
           return null;
       }
   } else if (prefix === "ST") {
-      if (floor === 'B') {
+      if (floor === '0') {
         filename = JSON.parse(localStorage.getItem('STB_Array'));
         saveto = 'STB_Array';
           //filename = "../../CSV_files/StudentCenter_zero_floor_table.csv";
