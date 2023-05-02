@@ -159,7 +159,7 @@ function createHTMLElementAtCoordinatePair(xPercent, yPercent, parentElement) {
 }
 function searchAndCreate1(element_ID) {
     // Retrieve the array from localStorage
-    var dataArray = JSON.parse(localStorage.getItem('CAMP1_Array'));
+    var dataArray = JSON.parse(localStorage.getItem('ScienceCenter1_Array'));
     console.log(dataArray[1])
     // Check if dataArray is not null or undefined
     if (dataArray) {
@@ -179,7 +179,7 @@ function searchAndCreate1(element_ID) {
 }
   function searchAndCreate2(element_ID) {
     // Retrieve the array from localStorage
-    var dataArray = JSON.parse(localStorage.getItem('CAMP2_Array'));
+    var dataArray = JSON.parse(localStorage.getItem('ScienceCenter2_Array'));
     console.log(dataArray[1])
     // Check if dataArray is not null or undefined
     if (dataArray) {
@@ -199,7 +199,7 @@ function searchAndCreate1(element_ID) {
   }
 function searchAndCreate3(element_ID) {
     // Retrieve the array from localStorage
-    var dataArray = JSON.parse(localStorage.getItem('CAMP3_Array'));
+    var dataArray = JSON.parse(localStorage.getItem('ScienceCenter3_Array'));
     console.log(dataArray[1])
     // Check if dataArray is not null or undefined
     if (dataArray) {

@@ -24,9 +24,9 @@
               <p>Floor Navigation </p>
               <div class="column_3">
                 <div class="row_c3">
-                    <a href = "sc_three.html"><i class="arrow up"></i></a>
+                    <a href = "ScienceCenter_three.html"><i class="arrow up"></i></a>
                 </div>
-                <a href = "sc_one.html"><i class="arrow down"></i></a>
+                <a href = "ScienceCenter_one.html"><i class="arrow down"></i></a>
               </div>
               <input type="text" id="searchTXT" placeholder="Search..">
               <button onclick="searchbar()">Search</button>
@@ -35,7 +35,7 @@
           <div class = "column_2">
             <h1>Science Center Second Floor</h1>
             <div id="parent" class = "parent">
-                <img src="./sc_maps/ScienceCenter_second_floor_plan.png" class ="center">
+                <img src="./sc_maps/ScienceCenter_second_floor_plan.jpg" class ="center">
             </div>
           </div>
           <div class="searchPopup">
@@ -43,7 +43,7 @@
                 <form action="/action_page.php" class="formContainer">
                 <h2>Search</h2>
             
-                <button type="submit" class="btn">Go To</button>
+                <button type="button" class="btn" onclick="goTo()" id="goToBtn">Go To</button>
                 <button type="submit" class="btn">Directions To </button>
                 <button type="button" onclick="closeForm()">Close</button>
                 </form>
