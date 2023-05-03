@@ -284,7 +284,7 @@ function searchAndCreate3(element_ID) {
   }
   function makefalse3() {
 
-    var dataArray = JSON.parse(localStorage.getItem('ScienceCenter3_Array'));// Retrieve the array from localStorage
+    var dataArray = JSON.parse(localStorage.getItem('Snell3_Array'));// Retrieve the array from localStorage
     
     if (dataArray) { // Check if dataArray is not null or undefined
 
@@ -297,3 +297,14 @@ function searchAndCreate3(element_ID) {
       console.log('Snell3_Array is null or undefined. Please load CSV data first.');
     }
   }
+
+
+
+
+
+
+
+
+
+
+
