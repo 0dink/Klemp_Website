@@ -23,8 +23,7 @@ function SnellB_CSV_to_Array() {
         }
     };
 
-    var file = './campus_tour/CSV_files/Snell_zero_floor_table.csv';  // Set the default file path
-
+    var file = './campus_tour/CSV_files/Snell_zero_floor_table.csv';
     xhr.open('GET', file, true);// Open the file and send the request
     xhr.send();
 }
@@ -53,7 +52,7 @@ function Snell1_CSV_to_Array() {
         }
     };
 
-    var file = './campus_tour/CSV_files/Snell_first_floor_table.csv';  // Set the default file path
+    var file = './campus_tour/CSV_files/Snell_first_floor_table.csv';   // Set the default file path
 
     xhr.open('GET', file, true);// Open the file and send the request
     xhr.send();
