@@ -217,9 +217,9 @@ function searchAndCreate3(element_ID) {
       console.log('myDataArray is null or undefined. Please load CSV data first.');
     }
   }
-  function makefalse1() {
+  function makefalseB() {
 
-    var dataArray = JSON.parse(localStorage.getItem('ScienceCenter1_Array'));// Retrieve the array from localStorage
+    var dataArray = JSON.parse(localStorage.getItem('SnellB_Array'));// Retrieve the array from localStorage
     
     if (dataArray) { // Check if dataArray is not null or undefined
 
@@ -227,14 +227,29 @@ function searchAndCreate3(element_ID) {
        dataArray[i].Display = 'false';
       }
   
-      localStorage.setItem('ScienceCenter1_Array', JSON.stringify(dataArray)); // Save the updated dataArray back to localStorage
+      localStorage.setItem('SnellB_Array', JSON.stringify(dataArray)); // Save the updated dataArray back to localStorage
     } else {
-      console.log('ScienceCenter1_Array is null or undefined. Please load CSV data first.');
+      console.log('SnellB_Array is null or undefined. Please load CSV data first.');
+    }
+  }
+  function makefalse1() {
+
+    var dataArray = JSON.parse(localStorage.getItem('Snell1_Array'));// Retrieve the array from localStorage
+    
+    if (dataArray) { // Check if dataArray is not null or undefined
+
+      for (var i = 0; i < dataArray.length; i++) {// Loop through the array and set the Display property to true
+       dataArray[i].Display = 'false';
+      }
+  
+      localStorage.setItem('Snell1_Array', JSON.stringify(dataArray)); // Save the updated dataArray back to localStorage
+    } else {
+      console.log('Snell1_Array is null or undefined. Please load CSV data first.');
     }
   }
   function makefalse2() {
 
-    var dataArray = JSON.parse(localStorage.getItem('ScienceCenter2_Array'));// Retrieve the array from localStorage
+    var dataArray = JSON.parse(localStorage.getItem('Snell2_Array'));// Retrieve the array from localStorage
     
     if (dataArray) { // Check if dataArray is not null or undefined
 
@@ -242,9 +257,9 @@ function searchAndCreate3(element_ID) {
        dataArray[i].Display = 'false';
       }
   
-      localStorage.setItem('ScienceCenter2_Array', JSON.stringify(dataArray)); // Save the updated dataArray back to localStorage
+      localStorage.setItem('Snell2_Array', JSON.stringify(dataArray)); // Save the updated dataArray back to localStorage
     } else {
-      console.log('ScienceCenter2_Array is null or undefined. Please load CSV data first.');
+      console.log('Snell2_Array is null or undefined. Please load CSV data first.');
     }
   }
   function makefalse3() {
@@ -257,8 +272,8 @@ function searchAndCreate3(element_ID) {
        dataArray[i].Display = 'false';
       }
   
-      localStorage.setItem('ScienceCenter3_Array', JSON.stringify(dataArray)); // Save the updated dataArray back to localStorage
+      localStorage.setItem('Snell3_Array', JSON.stringify(dataArray)); // Save the updated dataArray back to localStorage
     } else {
-      console.log('ScienceCenter3_Array is null or undefined. Please load CSV data first.');
+      console.log('Snell3_Array is null or undefined. Please load CSV data first.');
     }
   }
