@@ -3,7 +3,7 @@ RoomName,XCoord,YCoord,Path,Display
 022,39.4043,13.2812,"""http://127.0.0.1:5501/campus_tour/buildings/StudentCenter/StudentCenter_basement.html""",False
 021,44.6777,17.9199,"""http://127.0.0.1:5501/campus_tour/buildings/StudentCenter/StudentCenter_basement.html""",False
 S2-000,51.5625,20.6055,"""https://webspace.clarkson.edu/projects/KLEMP/public_html/Klemp_Website-main/campus_tour/buildings/StudentCenter/StudentCenter_b.html""",False
-012,27.6367,24.2676,"""http://127.0.0.1:5501/campus_tour/buildings/StudentCenter/StudentCenter_basement.html""",False
+012,27.6367,24.2676,"""https://webspace.clarkson.edu/projects/KLEMP/public_html/Klemp_Website-main/campus_tour/buildings/StudentCenter/StudentCenter_b.html""",False
 012A,38.0859,23.877,"""https://webspace.clarkson.edu/projects/KLEMP/public_html/Klemp_Website-main/campus_tour/buildings/StudentCenter/StudentCenter_b.html""",False
 00C,43.4082,27.5879,"""https://webspace.clarkson.edu/projects/KLEMP/public_html/Klemp_Website-main/campus_tour/buildings/StudentCenter/StudentCenter_b.html""",False
 014,21.1914,28.5156,"""https://webspace.clarkson.edu/projects/KLEMP/public_html/Klemp_Website-main/campus_tour/buildings/StudentCenter/StudentCenter_b.html""",False
